@@ -1,0 +1,629 @@
+route_number,stop_id,stop_sequence,stop_name,latitude,longitude
+11%20%G,11220909946,1,"Ashok Pillar Road, Zone 10 Kodambakkam",13.0358165,80.2057589
+11%20%G,308317064,2,"Inner Ring Road, Zone 10 Kodambakkam",13.0348314,80.2118803
+11%20%G,1024562407,3,"Jawaharlal Nehru Road (100 Feet Road), Zone 10 Kodambakkam",13.0350618,80.2119045
+11%20%G,1024560151,4,"Inner Ring Road, Zone 10 Kodambakkam (Route 11%20%G)",13.032555,80.2119909
+11%20%G,10187877326,5,"Esplanade, Zone 5 Royapuram",13.0876838,80.2836744
+11%20%G,1955951295,6,"7th Avenue, Zone 10 Kodambakkam",13.0343805,80.2161535
+11%20%G,9894539908,7,Dr Nair Road - CMWSSB Division 136,13.0409609,80.2405902
+11%20%G,3725571283,8,"Sir Thyagaraya Road, Zone 9 Teynampet",13.0403357,80.2416011
+11%20%G,306551395,9,"Anna Salai (Mount Road), Zone 9 Teynampet",13.0405526,80.2470139
+11%20%G,308301022,10,"Anna Salai (Mount Road), Zone 9 Teynampet (13.0468N)",13.0467908,80.2482982
+11%20%G,316244810,11,Anna Salai (Mount Road) - CMWSSB Division 111,13.0565217,80.2564362
+11%20%G,309185827,12,"Anna Salai (Mount Road), Zone 9 Teynampet (Route 11%20%G)",13.0593116,80.259461
+11%20%G,7155445050,13,"Anna Salai (Mount Road), Zone 9 Teynampet (Route 11%20%G) #2",13.0592866,80.2595105
+11%20%G,9920370158,14,"Anna Salai (Mount Road), Zone 9 Teynampet (Route 11%20%G) #3",13.0606236,80.2610739
+11%20%G,309185812,15,"Anna Salai (Mount Road), Zone 5 Royapuram",13.0627904,80.2636986
+11%20%G,2482072922,16,"Pallavan Salai, Zone 5 Royapuram",13.0768078,80.276179
+114,4739613829,1,"Jawaharlal Nehru Road (100 Feet Road), Zone 10 Kodambakkam (13.0736N)",13.0735659,80.2003418
+114,577362217,2,"MTC Busway, Zone 10 Kodambakkam",13.0687582,80.2052047
+114,5320093328,3,"Jawaharlal Nehru Road (100 Feet Road), Zone 7 Ambattur",13.082197,80.1983699
+114,6518463385,4,"Jawaharlal Nehru Road (100 Feet Road), Zone 7 Ambattur (Route 114)",13.0906674,80.1984558
+114,11953087602,5,"Grand Northern Trunk Road, Zone 3 Madhavaram",13.1651503,80.2023657
+114,10291068732,6,"Padi Flyover, Zone 7 Ambattur",13.1020524,80.1943128
+114,5624538882,7,"Jawaharlal Nehru Road (100 Feet Road), Zone 7 Ambattur (Route 114) #2",13.119438,80.1986536
+114,11915150828,8,"Jawaharlal Nehru Road (100 Feet Road), Kolathur",13.1237598,80.202265
+114,11953087580,9,"Jawaharlal Nehru Road (100 Feet Road), Kolathur (Route 114)",13.1260395,80.2064145
+114,11953087584,10,"Jawaharlal Nehru Road (100 Feet Road), Zone 3 Madhavaram",13.1356937,80.2162314
+114,11953087586,11,"Grand Northern Trunk Road, Zone 3 Madhavaram (Route 114)",13.1449193,80.2193508
+114,11953087588,12,"Grand Northern Trunk Road, Zone 3 Madhavaram (Route 114) #2",13.1532668,80.2081352
+114,11930865099,13,"Grand Northern Trunk Road, Zone 3 Madhavaram (Route 114) #3",13.1582106,80.2036717
+114,11953087601,14,"Grand Northern Trunk Road, Zone 3 Madhavaram (Route 114) #4",13.1643511,80.2023309
+114,11953087603,15,"Grand Northern Trunk Road, Zone 3 Madhavaram (Route 114) #5",13.1704729,80.1992463
+114,11953087606,16,"Grand Northern Trunk Road, Red Hills",13.1784566,80.1947536
+114,12147208813,17,"Grand Northern Trunk Road (Old NH5), Red Hills",13.1841966,80.1916402
+114,11953087611,18,"Grand Northern Trunk Road (Old NH5), Red Hills (Route 114)",13.1894981,80.1873829
+11G,7412932325,1,Netaji Subhash Chandra Bose Road,13.0883365,80.2838631
+11G,9504474774,2,"Pallavan Salai, Zone 5 Royapuram (Route 11G)",13.0763679,80.2763591
+11G,2482072921,3,Pallavan Salai - CMWSSB Division 59,13.0763656,80.276459
+11G,11220909947,4,"Ashok Pillar Road, Zone 10 Kodambakkam (Route 11G)",13.0356997,80.2057471
+11G,9504474775,5,General Hospital Road,13.081935,80.2774889
+11G,2482072870,6,General Hospital Road (13.0819N),13.0818538,80.2775047
+11G,9504474773,7,"Anna Salai (Mount Road), Zone 5 Royapuram (Route 11G)",13.0703667,80.2737145
+11G,309062093,8,Anna Salai (Mount Road) - CMWSSB Division 59,13.0702882,80.2738035
+11G,5356742026,9,"Anna Salai (Mount Road), Zone 9 Teynampet (13.0542N)",13.054195,80.253785
+11G,1024558013,10,"11th Avenue, Zone 10 Kodambakkam",13.0316543,80.2122049
+11G,301736187,11,"Scheme Road, Zone 9 Teynampet",13.0414948,80.2476472
+11G,1955951303,12,"10th Avenue, Zone 10 Kodambakkam",13.0343297,80.2162105
+11G,1024570438,13,"Ashok Pillar Road, Zone 10 Kodambakkam (Route 11G) #2",13.0351977,80.2082567
+11G,365279752,14,"Anna Salai (Mount Road), Zone 9 Teynampet (13.0470N)",13.0470132,80.2487062
+11G,2482014616,15,"Anna Salai (Mount Road), Zone 9 Teynampet (13.0593N)",13.0593336,80.2598375
+11G,3724408109,16,"Thambiah Road, Zone 10 Kodambakkam",13.0412747,80.2247636
+11G,9504474776,17,Rattan Bazaar Road,13.0876798,80.2814746
+11G,4417314190,18,"Doraiswamy Road, Zone 10 Kodambakkam",13.0407196,80.2306959
+11G,316244809,19,"Anna Salai (Mount Road), Zone 5 Royapuram (13.0673N)",13.0672558,80.2705663
+11G,2482072878,20,Anna Salai (Mount Road) - CMWSSB Division 63,13.064682,80.2663928
+11G,4407799419,21,"Sir Thyagaraya Road, Zone 9 Teynampet (Route 11G)",13.0399858,80.2429146
+11G,1952555473,22,"2nd Street, Zone 10 Kodambakkam",13.0370153,80.2208949
+11G,571352244,23,"Sir Thyagaraya Road, Zone 9 Teynampet (Route 11G) #2",13.0394488,80.2455135
+147C,247675520,1,Burkit Road - CMWSSB Division 141,13.0349762,80.2307357
+147C,7796477442,2,Chennai - Tiruttani - Renigunta Road - CMWSSB Division 85,13.1103659,80.1522998
+147C,7869100700,3,Chennai - Tiruttani - Renigunta Road - CMWSSB Division 85 (Route 147C),13.1060625,80.1524361
+147C,7796477452,4,Chennai - Tiruttani - Renigunta Road - CMWSSB Division 86,13.1015063,80.1625708
+147C,7796477468,5,2nd Main Road - CMWSSB Division 86,13.0994583,80.1702657
+147C,7796505766,6,Ambattur Estate Road - CMWSSB Division 86,13.0886781,80.1715578
+147C,7869100702,7,Thirumangalam – Mogappair Road - CMWSSB Division 89,13.0883017,80.1784121
+147C,5394814347,8,Thirumangalam – Mogappair Road - CMWSSB Division 89 (Route 147C),13.0878057,80.1903448
+147C,5373987234,9,Thirumangalam – Mogappair Road - CMWSSB Division 99,13.0873581,80.1974447
+147C,5227401703,10,2nd Avenue Anna Nagar - CMWSSB Division 99,13.0853785,80.2013107
+147C,5338617221,11,"2nd Avenue, Anna Nagar West - CMWSSB Division 100",13.0849958,80.2109928
+147C,5338612406,12,"2nd Avenue, Anna Nagar West - CMWSSB Division 101",13.0848033,80.2159601
+147C,7843267874,13,Anna Arch Road - CMWSSB Division 100,13.0760536,80.2181587
+147C,7843267872,14,Nelson Manickam Road - CMWSSB Division 106,13.0720107,80.2220136
+147C,7869100703,15,Nelson Manickam Road - CMWSSB Division 106 (Route 147C),13.0678542,80.2269976
+147C,7869100704,16,Nelson Manickam Road - CMWSSB Division 109,13.0666515,80.230974
+147C,4421948892,17,Nelson Manickam Road - CMWSSB Division 110,13.0645529,80.2349783
+147C,3216990971,18,College Road,13.0677838,80.2465225
+147C,4421925892,19,Haddows Road,13.067122,80.2479405
+147C,3215503639,20,Uttamar Gandhi Salai - CMWSSB Division 110,13.062284,80.2449997
+147C,309323593,21,Uttamar Gandhi Salai - CMWSSB Division 110 (Route 147C),13.0627272,80.2446808
+147C,7871877992,22,Valluvar Kottam High Road - CMWSSB Division 113,13.05383,80.2423007
+147C,9419760484,23,Anna Arch Flyover Ramp - CMWSSB Division 100,13.0753585,80.2176228
+147C,5336303647,24,Anna Arch Flyover Ramp - CMWSSB Division 100 (Route 147C),13.075358,80.2176034
+147C,9894539903,25,Anna Arch Road - CMWSSB Division 100 (Route 147C),13.0813149,80.2177915
+147C,9894539902,26,"2nd Avenue, Anna Nagar West - CMWSSB Division 100 (Route 147C)",13.0846068,80.2159694
+147C,5338616524,27,"2nd Avenue, Anna Nagar West - CMWSSB Division 100 (Route 147C) #2",13.0847224,80.2118818
+147C,5338656232,28,"2nd Avenue, Anna Nagar West - CMWSSB Division 100 (Route 147C) #3",13.0848336,80.2095342
+147C,5239594891,29,"Thirumangalam – Mogappair Road, Zone 8 Anna Nagar",13.0870648,80.1981881
+147C,5394822729,30,"Thirumangalam – Mogappair Road, Zone 7 Ambattur",13.0875626,80.1893914
+147C,7796505767,31,"Ambattur Estate Road, Zone 7 Ambattur",13.0884416,80.172007
+147C,9370309976,32,"2nd Main Road, Zone 7 Ambattur",13.0890597,80.1694157
+147C,7796477453,33,"Chennai - Tiruttani - Renigunta Road, Zone 7 Ambattur",13.1012433,80.1627648
+147C,7185834751,34,"Chennai - Tiruttani - Renigunta Road, Zone 7 Ambattur (Route 147C)",13.1034994,80.1566326
+147C,7869208199,35,"Chennai - Tiruttani - Renigunta Road, Zone 7 Ambattur (Route 147C) #2",13.1049651,80.1526301
+147C,7796477443,36,"Chennai - Tiruttani - Renigunta Road, Zone 7 Ambattur (Route 147C) #3",13.1116502,80.1510999
+147C,7796211329,37,"Chennai - Tiruttani - Renigunta Road, Zone 7 Ambattur (Route 147C) #4",13.1196709,80.149986
+14M,9417619445,1,"City Link Road, Ward 161",12.9947979,80.2067982
+14M,9417619433,2,"Medavakkam Main Road, Ward 161",12.9946272,80.200283
+14M,9417619431,3,"Mount - Medavakkam Road, Ward 165",12.9818042,80.1957994
+14M,9417619430,4,"Mount - Medavakkam Road, Zone 14 Perungudi",12.9725284,80.1914999
+14M,9417619429,5,"Mount - Medavakkam Road, Zone 14 Perungudi (Route 14M)",12.9725096,80.1915348
+14M,9417619442,6,"Mount - Medavakkam Road, Nanganallur",12.9682552,80.189596
+14M,9417619443,7,"Mount - Medavakkam Road, Nanganallur (12.9682N)",12.9682417,80.1896401
+14M,9417619440,8,"Mount - Medavakkam Road, Ullagaram",12.9661068,80.1886704
+14M,300370338,9,"Vanuvampet South New Street, Ward 165",12.9816619,80.1957195
+14M,9417619438,10,"Mount - Medavakkam Road, Keelkattalai",12.9559551,80.1869989
+14M,300134382,11,"Mount - Medavakkam Road, Pazhavanthangal",12.988501,80.197819
+14M,9417619436,12,"Medavakkam Main Road, Keelkattalai",12.9486369,80.1851774
+14M,279150540,13,"Medavakkam Main Road, Ward 161 (Route 14M)",12.9946395,80.200193
+14M,9526179500,14,"Medavakkam Main Road, Nanmangalam",12.9392448,80.182525
+14M,1711224934,15,"Medavakkam Main Road, Nanmangalam (Route 14M)",12.9392427,80.1825888
+14M,694064191,16,Velachery Mudhanmai Salai (12.9206),12.9205917,80.184473
+15B,966544114,1,General Hospital Road (Route 15B),13.0812054,80.2730145
+15B,303284248,2,General Hospital Road (Route 15B) #2,13.0812612,80.2718576
+15B,7412932325,3,Netaji Subhash Chandra Bose Road,13.0883365,80.2838631
+15B,9504474776,4,Rattan Bazaar Road,13.0876798,80.2814746
+15B,2482072870,5,General Hospital Road (13.0819N),13.0818538,80.2775047
+15B,9504474775,6,General Hospital Road,13.081935,80.2774889
+15B,3216990390,7,EVR Periyar Salai,13.0787415,80.2521255
+18D,9676647822,1,"Keelkattalai Bus Stand Service Road, Keelkattalai",12.956068,80.1862921
+18D,7412932325,2,Netaji Subhash Chandra Bose Road,13.0883365,80.2838631
+18D,9522345426,3,"Mount - Medavakkam Road, Keelkattalai (Route 18D)",12.9654012,80.1882967
+18D,310592291,4,"Mount - Medavakkam Road, Keelkattalai (Route 18D) #2",12.9661338,80.1885663
+18D,278745849,5,"Mount - Medavakkam Road, Nanganallur (Route 18D)",12.9682899,80.18948
+18D,9417619441,6,"Mount - Medavakkam Road, Nanganallur (Route 18D) #2",12.968278,80.189535
+18D,9368655291,7,"Mount - Medavakkam Road, Zone 14 Perungudi (Route 18D)",12.9726563,80.1914521
+18D,7802828807,8,"Puzhuthivakkam Road, Zone 14 Perungudi",12.9726442,80.1914709
+18D,9417619438,9,"Mount - Medavakkam Road, Keelkattalai",12.9559551,80.1869989
+18D,5356742026,10,"Anna Salai (Mount Road), Zone 9 Teynampet (13.0542N)",13.054195,80.253785
+18D,9514055804,11,"Mount - Medavakkam Road, Pazhavanthangal (Route 18D)",12.9886237,80.197745
+18D,300134382,12,"Mount - Medavakkam Road, Pazhavanthangal",12.988501,80.197819
+18D,9514055815,13,"Anna Salai (Mount Road), Zone 13 Adyar",13.0121297,80.2202503
+18D,306551393,14,"Anna Salai (Mount Road), Zone 10 Kodambakkam",13.0192595,80.2242262
+18D,9514067017,15,"Anna Salai (Mount Road), Zone 13 Adyar (Route 18D)",13.0294407,80.2369328
+18D,306551396,16,"Teynampet-Saidapet steel flyover, Zone 9 Teynampet",13.0373003,80.2463991
+18D,308301022,17,"Anna Salai (Mount Road), Zone 9 Teynampet (13.0468N)",13.0467908,80.2482982
+18D,316244810,18,Anna Salai (Mount Road) - CMWSSB Division 111,13.0565217,80.2564362
+18D,2482072878,19,Anna Salai (Mount Road) - CMWSSB Division 63,13.064682,80.2663928
+18D,2482072922,20,"Pallavan Salai, Zone 5 Royapuram",13.0768078,80.276179
+19B,3263015885,1,Anna Salai (Mount Road) - CMWSSB Division 171,13.0232491,80.2274463
+19B,1457114954,2,Old Mahapalipuram Service Road - CMWSSB Division 183,12.9794944,80.2528353
+19B,1183430572,3,Rajiv Gandhi IT Expressway - CMWSSB Division 172,12.9966477,80.2490952
+19B,1183430763,4,Rajiv Gandhi IT Expressway - CMWSSB Division 180,12.9893849,80.2508691
+19B,3263015892,5,Taluk Office Road,13.0143216,80.2262688
+19B,7412854052,6,Rajiv Gandhi Salai - CMWSSB Division 183,12.9729954,80.2502408
+19B,1457114931,7,Old Mahapalipuram Service Road - CMWSSB Division 183 (12.9669N),12.9669208,80.2482764
+21G,9400398388,1,"Grand Southern Trunk Road, East Tambaram",12.9276798,80.1187584
+23C,9570575688,1,"Ayanavaram Bus Terminus Service Road, Ward 69",13.0986329,80.2420053
+23C,1971862196,2,Sardar Patel Road - CMWSSB Division 171,13.0082459,80.2334763
+23C,1280328281,3,"Adithanar Road, Zone 5 Royapuram",13.0715858,80.2646192
+23C,299808136,4,"Besant Nagar 1st Avenue, Zone 13 Adyar",13.0002825,80.2653435
+23C,5356742026,5,"Anna Salai (Mount Road), Zone 9 Teynampet (13.0542N)",13.054195,80.253785
+23C,3217004939,6,Dr Muthulakshmi Salai,12.998741,80.2561722
+23C,301736187,7,"Scheme Road, Zone 9 Teynampet",13.0414948,80.2476472
+23C,389516314,8,"Anna Salai (Mount Road), Zone 9 Teynampet (Route 23C)",13.0368739,80.2466823
+23C,3263015885,9,Anna Salai (Mount Road) - CMWSSB Division 171,13.0232491,80.2274463
+23C,303695784,10,"Pantheon Road, Zone 5 Royapuram",13.0737672,80.2618156
+23C,417750654,11,Besant Nagar 2nd Avenue,12.9960874,80.2676685
+23C,365279752,12,"Anna Salai (Mount Road), Zone 9 Teynampet (13.0470N)",13.0470132,80.2487062
+23C,2482014616,13,"Anna Salai (Mount Road), Zone 9 Teynampet (13.0593N)",13.0593336,80.2598375
+23C,310100943,14,Sardar Patel Road - CMWSSB Division 172,13.0068649,80.2407247
+23C,316244809,15,"Anna Salai (Mount Road), Zone 5 Royapuram (13.0673N)",13.0672558,80.2705663
+23C,2481989472,16,"Anna Salai (Mount Road), Zone 5 Royapuram (Route 23C)",13.0643262,80.2659171
+23C,303512414,17,"Anna Salai (Mount Road), Zone 13 Adyar (Route 23C)",13.0195637,80.2246585
+23C,3262996627,18,"Sardar Patel Road, Zone 13 Adyar",13.0066383,80.2547553
+23C,313783576,19,Mahatma Gandhi Road,12.9963185,80.2624567
+23C,384486247,20,Raja Annamalai Road,13.0799588,80.2547872
+23C,365983874,21,"Taluk Office Road, Zone 13 Adyar",13.013981,80.2265266
+23C,249497696,22,"Sardar Patel Road, Zone 13 Adyar (Route 23C)",13.0070054,80.2583614
+266,3678928567,1,"Mount - Poonamallee - Avadi Road, Sekkadu",13.1166176,80.1005434
+266,7053500327,2,"Mount - Poonamallee - Avadi Road, Thiruverkadu",13.111373,80.1086951
+266,11195612554,3,"Mount - Poonamallee - Avadi Road, Thiruverkadu (Route 266)",13.1113894,80.108732
+266,11218122325,4,"Mount - Poonamallee - Avadi Road, Thiruverkadu (Route 266) #2",13.1142419,80.1082232
+266,11195612555,5,"Mount - Poonamallee - Avadi Road, Thiruverkadu (Route 266) #3",13.1142499,80.1082814
+266,11218122324,6,"Mount - Poonamallee - Avadi Road, Thiruverkadu (Route 266) #4",13.0865016,80.1086769
+266,11195612550,7,"Mount - Poonamallee - Avadi Road, Thiruverkadu (Route 266) #5",13.0865074,80.1087025
+266,9933687788,8,"Chennai Bus Stop (13.0937, 80.1085)",13.0936958,80.1084728
+266,11195612551,9,"Mount - Poonamallee - Avadi Road, Thiruverkadu (Route 266) #6",13.0936827,80.1085094
+266,11218122323,10,"Mount - Poonamallee - Avadi Road, Thiruverkadu (Route 266) #7",13.0983793,80.1083688
+266,11195612552,11,"Mount - Poonamallee - Avadi Road, Thiruverkadu (Route 266) #8",13.0983825,80.1084477
+266,11218122322,12,"Mount - Poonamallee - Avadi Road, Thiruverkadu (Route 266) #9",13.1027472,80.1084078
+266,11195612553,13,"Mount - Poonamallee - Avadi Road, Thiruverkadu (Route 266) #10",13.1027426,80.108453
+266,11218122321,14,"Mount - Poonamallee - Avadi Road, Thiruverkadu (Route 266) #11",13.0816715,80.1093223
+266,11195612549,15,"Mount - Poonamallee - Avadi Road, Thiruverkadu (Route 266) #12",13.0816886,80.1093596
+266,11218122320,16,"Mount - Poonamallee - Avadi Road, Thiruverkadu (Route 266) #13",13.0748293,80.1117502
+266,11195612548,17,"Mount - Poonamallee - Avadi Road, Thiruverkadu (Route 266) #14",13.0748382,80.1117817
+266,11218122319,18,"Mount - Poonamallee - Avadi Road, Thiruverkadu (Route 266) #15",13.0662147,80.1125785
+266,11195612547,19,"Mount - Poonamallee - Avadi Road, Thiruverkadu (Route 266) #16",13.0662136,80.1126212
+266,11218122318,20,"Mount - Poonamallee - Avadi Road, Thiruverkadu (Route 266) #17",13.0619668,80.1130326
+266,11195612546,21,"Mount - Poonamallee - Avadi Road, Thiruverkadu (Route 266) #18",13.0619783,80.1130718
+266,11218122316,22,Mount - Poonamallee - Avadi Road (13.0523),13.0523102,80.1127315
+266,11195612544,23,Mount - Poonamallee - Avadi Road (13.0523) (Route 266),13.0523107,80.1127741
+266,11218122317,24,Mount - Poonamallee - Avadi Road (13.0557),13.0557341,80.113918
+266,11195612545,25,Mount - Poonamallee - Avadi Road (13.0557) (Route 266),13.0557284,80.1139569
+266,11218122315,26,Mount - Poonamallee - Avadi Road (13.0464),13.0464201,80.1118008
+266,11195612543,27,Mount - Poonamallee - Avadi Road (13.0464) (Route 266),13.0464185,80.1118353
+266,7799977292,28,"Poonamallee - Kundrathur - Pallavaram Road, Mangadu",13.043824,80.1153082
+266,11195612542,29,"Poonamallee - Kundrathur - Pallavaram Road, Mangadu (Route 266)",13.0438277,80.1153383
+266,11218122313,30,"Poonamallee - Kundrathur - Pallavaram Road, Mangadu (Route 266) #2",13.0411796,80.1144347
+266,11195612541,31,"Poonamallee - Kundrathur - Pallavaram Road, Mangadu (Route 266) #3",13.0411612,80.1144639
+266,11218122312,32,"Poonamallee - Kundrathur - Pallavaram Road, Mangadu (Route 266) #4",13.0381197,80.1131841
+266,11195612540,33,"Poonamallee - Kundrathur - Pallavaram Road, Mangadu (Route 266) #5",13.0381183,80.1132093
+266,11218122311,34,"Poonamallee - Kundrathur - Pallavaram Road, Mangadu (Route 266) #6",13.0350531,80.1120641
+266,11195612539,35,"Poonamallee - Kundrathur - Pallavaram Road, Mangadu (Route 266) #7",13.0350492,80.1120955
+266,9400398392,36,"Grand Southern Trunk Road, East Tambaram (12.9294N)",12.9293586,80.1206329
+266,9400398391,37,"Grand Southern Trunk Road, East Tambaram (12.9293N)",12.9293289,80.1206916
+27D,310729808,1,Dr Radhakrishnan Salai - CMWSSB Division 121,13.0445134,80.2685481
+27D,5631301115,2,Dr Radhakrishnan Salai - CMWSSB Division 121 (Route 27D),13.0444719,80.2685434
+27D,9886468232,3,Dr Radhakrishnan Salai - CMWSSB Division 119,13.0446919,80.2630242
+27D,9734354380,4,Dr Radhakrishnan Salai - CMWSSB Division 119 (Route 27D),13.0446727,80.2630248
+27D,355550113,5,Gandhi Irwin Road - CMWSSB Division 61,13.0775116,80.2618805
+27D,9734416560,6,Dr Radhakrishnan Salai - CMWSSB Division 121 (Route 27D) #2,13.0438762,80.2715829
+27D,2482075364,7,Pantheon Road - CMWSSB Division 61,13.074166,80.2620635
+27D,378688565,8,Cathedral Road - CMWSSB Division 118,13.0513415,80.2516342
+27D,2482072878,9,Anna Salai (Mount Road) - CMWSSB Division 63,13.064682,80.2663928
+27D,316244810,10,Anna Salai (Mount Road) - CMWSSB Division 111,13.0565217,80.2564362
+27D,3216995856,11,Cathedral Road - CMWSSB Division 118 (Route 27D),13.0459666,80.256717
+27D,2482014617,12,Anna Salai (Mount Road) - CMWSSB Division 111 (Route 27D),13.0593726,80.2595362
+27D,309185794,13,Dams Road - CMWSSB Division 63,13.0671092,80.2685713
+27D,5336393773,14,Konnur High Road - CMWSSB Division 95,13.1027785,80.2086858
+27D,301736902,15,Cathedral Road - CMWSSB Division 118 (Route 27D) #2,13.0479032,80.2538704
+27D,3216994236,16,Cathedral Road - CMWSSB Division 118 (Route 27D) #3,13.0501996,80.2526129
+27D,2482075369,17,"Adithanar Road, Zone 5 Royapuram (Route 27D)",13.0716607,80.2646506
+27D,309185820,18,"Anna Salai (Mount Road), Zone 9 Teynampet (Route 27D)",13.0592286,80.2597052
+27D,5356742026,19,"Anna Salai (Mount Road), Zone 9 Teynampet (13.0542N)",13.054195,80.253785
+27D,9886329408,20,"Foreshore Estate Bus Terminus Driveway, Zone 13 Adyar",13.0223777,80.276278
+29C,9921938904,1,Vasan Street,13.1085828,80.2482599
+29C,611743120,2,Cooks Road,13.1030788,80.2527847
+29C,3216970916,3,Cooks Road (Route 29C),13.1023363,80.2526445
+29C,9921942426,4,Besant Nagar 1st Avenue Service Road,13.0003026,80.2657987
+29C,3216957362,5,Perambur High Road,13.1073116,80.2467397
+29C,9921938899,6,Perambur High Road (Route 29C),13.1061602,80.2505118
+29C,3216958497,7,Perambur High Road (Route 29C) #2,13.1062169,80.250519
+29C,9921938898,8,Perambur High Road (Route 29C) #3,13.1049467,80.253114
+29C,3216970886,9,Perambur High Road (Route 29C) #4,13.105056,80.2531768
+29C,9921938897,10,Cooks Road (Route 29C) #2,13.102398,80.2525825
+29C,9921938896,11,Brick Klin Road,13.0972562,80.2513655
+29C,3216985354,12,Chellappa Mudali Street,13.0972157,80.2514514
+29C,257932256,13,Thiru Vi Ka Street,13.0936754,80.2508682
+29C,3216986182,14,Thiru Vi Ka Street (Route 29C),13.0936235,80.2509794
+29C,9921938894,15,Brick Klin Road (Route 29C),13.0872312,80.2507024
+29C,3215513434,16,Brick Klin Road (Route 29C) #2,13.0872409,80.2507551
+29C,9921938893,17,Gangadeeshwar Koil Street,13.083453,80.2545545
+29C,3216986967,18,Gangadeeshwar Koil Street (Route 29C),13.0834502,80.254603
+29C,9921938892,19,Raja Annamalai Road (Route 29C),13.0799617,80.2546471
+29C,384486247,20,Raja Annamalai Road,13.0799588,80.2547872
+29C,9921938891,21,EVR Periyar Salai (Route 29C),13.0787743,80.2521242
+29C,3216990390,22,EVR Periyar Salai,13.0787415,80.2521255
+29C,9921938890,23,Mc Nichols Road,13.0704688,80.2420456
+29C,415913904,24,Mc Nichols Road (Route 29C),13.0704837,80.2421189
+29C,9921938889,25,College Road (Route 29C),13.0677731,80.2465395
+29C,3216990971,26,College Road,13.0677838,80.2465225
+29C,9921938888,27,Haddows Road (Route 29C),13.0671202,80.2479099
+29C,9921938887,28,Haddows Road (Route 29C) #2,13.0666679,80.247881
+29C,3216991399,29,Haddows Road (Route 29C) #3,13.0666677,80.2478922
+29C,9921938886,30,Uttamar Gandhi Salai (Nungambakkam High Road),13.060609,80.2474532
+29C,3216993078,31,Uttamar Gandhi Salai (Nungambakkam High Road) (Route 29C),13.0606301,80.247496
+29C,9921938885,32,Uttamar Gandhi Salai (Nungambakkam High Road) (Route 29C) #2,13.0594268,80.2479477
+29C,360807295,33,Uttamar Gandhi Salai (Nungambakkam High Road) (Route 29C) #3,13.0594687,80.2480638
+29C,9921938884,34,Uttamar Gandhi Salai (Nungambakkam High Road) (Route 29C) #4,13.0573111,80.2486595
+29C,3216991543,35,Uttamar Gandhi Salai (Nungambakkam High Road) (Route 29C) #5,13.0573221,80.2487138
+29C,9921938883,36,Uttamar Gandhi Salai (Nungambakkam High Road) (Route 29C) #6,13.0549423,80.2496076
+29C,3216995418,37,Uttamar Gandhi Salai (Nungambakkam High Road) (Route 29C) #7,13.0549585,80.2496516
+29C,9921938882,38,Cathedral Road,13.0514535,80.2518364
+29C,378688568,39,Cathedral Road (Route 29C),13.0514752,80.2518854
+29C,9921938881,40,Cathedral Road (Route 29C) #2,13.050467,80.2526125
+29C,9921938880,41,Cathedral Road (Route 29C) #3,13.0480058,80.2540431
+29C,9921938879,42,Cathedral Road (Route 29C) #4,13.0461759,80.2565485
+29C,355515114,43,Cathedral Road (Route 29C) #5,13.0462093,80.256558
+29C,9921938878,44,Dr Radhakrishnan Salai,13.0447817,80.2631832
+29C,9734368257,45,Dr Radhakrishnan Salai (Route 29C),13.0448097,80.2631942
+29C,9921938877,46,Dr Radhakrishnan Salai (Route 29C) #2,13.0446682,80.2653247
+29C,9734386075,47,Dr Radhakrishnan Salai (Route 29C) #3,13.0446914,80.2653248
+29C,9921938876,48,Thiruvika Salai,13.0417805,80.2682611
+29C,2485153591,49,Thiruvika Salai (Route 29C),13.0417872,80.2683179
+29C,9921938875,50,Thiruvika Salai (Route 29C) #2,13.0376257,80.2676931
+29C,3216998713,51,Thiruvika Salai (Route 29C) #3,13.0376266,80.2677461
+29C,2188511086,52,Ramkrishna Mutt Road,13.0343967,80.2680763
+29C,3216997832,53,Ramkrishna Mutt Road (Route 29C),13.0344064,80.2681224
+29C,9921938874,54,Ramkrishna Mutt Road (Route 29C) #2,13.0339289,80.2679807
+29C,410614397,55,Ramkrishna Mutt Road (Route 29C) #3,13.0339269,80.2680487
+29C,9921938873,56,Ramkrishna Mutt Road (Route 29C) #4,13.0299143,80.2667084
+29C,3216999998,57,Ramkrishna Mutt Road (Route 29C) #5,13.0299144,80.2667491
+29C,9921938872,58,RK Mutt Road,13.0272018,80.2661429
+29C,418116040,59,RK Mutt Road (Route 29C),13.027196,80.266243
+29C,3216996445,60,Robertson Lane,13.0253858,80.2654342
+29C,3217004886,61,Durgabai Deshmukh Road,13.0162141,80.2597582
+29C,249497682,62,CMWSSB Division 176,13.0109976,80.2591938
+29C,334713155,63,Durgabai Deshmukh Road (Route 29C),13.0110148,80.2592709
+29C,9921938869,64,Dr Muthulakshmi Salai (Route 29C),13.0002568,80.2563936
+29C,2587530809,65,Dr Muthulakshmi Salai (Route 29C) #2,13.0002744,80.2564084
+29C,9921938868,66,Dr Muthulakshmi Salai (Route 29C) #3,12.9987579,80.25609
+29C,3217004939,67,Dr Muthulakshmi Salai,12.998741,80.2561722
+29C,9921938867,68,Mahatma Gandhi Road (Route 29C),12.9962673,80.2624653
+29C,313783576,69,Mahatma Gandhi Road,12.9963185,80.2624567
+29C,9921938866,70,Besant Nagar 2nd Avenue (Route 29C),12.9961023,80.2677142
+29C,417750654,71,Besant Nagar 2nd Avenue,12.9960874,80.2676685
+29C,4421925892,72,Haddows Road,13.067122,80.2479405
+29C,3216986939,73,Brick Klin Road (Route 29C) #3,13.0906349,80.2511188
+29C,405508932,74,Cathedral Road (Route 29C) #6,13.0480237,80.2540873
+3,2237592529,1,"South Usman Road, Zone 10 Kodambakkam",13.0342665,80.2304553
+3,4172727623,2,"Taramani Link Road, Zone 13 Adyar",12.9785526,80.2253586
+3,2157590801,3,"Five Furlong Road, Zone 13 Adyar",12.997438,80.2162638
+3,9370267244,4,"Five Furlong Road, Zone 13 Adyar (12.9977N)",12.9976865,80.2159576
+3,6497450229,5,"South Usman Road, Zone 10 Kodambakkam (13.0343N)",13.0342592,80.230369
+51,9400398389,1,"Grand Southern Trunk Road, East Tambaram (12.9274N)",12.9273885,80.1184664
+51,9401706170,2,"Taramani Road, Zone 13 Adyar",12.9751658,80.2208286
+51,9400398392,3,"Grand Southern Trunk Road, East Tambaram (12.9294N)",12.9293586,80.1206329
+51,9400398391,4,"Grand Southern Trunk Road, East Tambaram (12.9293N)",12.9293289,80.1206916
+51,9400398338,5,"Velachery Mudhanmai Salai, East Tambaram",12.9233654,80.1206423
+51,3016144953,6,"Velachery Mudhanmai Salai, East Tambaram (12.9234N)",12.9234246,80.1206459
+51,9400398339,7,"Velachery Mudhanmai Salai, East Tambaram (12.9228N)",12.9228177,80.1311711
+51,3016141193,8,"Velachery Mudhanmai Salai, East Tambaram (12.9229N)",12.9228855,80.1311754
+51,9400398340,9,"Velachery Mudhanmai Salai, Chitlapakkam",12.9225505,80.1436777
+51,3016129434,10,"Velachery Mudhanmai Salai, Chitlapakkam (12.9226N)",12.9226099,80.1436734
+51,9400398343,11,"Velachery Mudhanmai Salai, Rajakilpakkam",12.9226532,80.1473651
+51,9400398342,12,"Velachery Mudhanmai Salai, Rajakilpakkam (Route 51)",12.9227028,80.1473638
+51,9400398341,13,"Velachery Mudhanmai Salai, Gowriwakkam",12.9234344,80.1545734
+51,5090924222,14,"Velachery Mudhanmai Salai, Gowriwakkam (12.9235N)",12.923495,80.1545664
+51,9400398344,15,"Velachery Mudhanmai Salai, Gowriwakkam (12.9235N) #2",12.9235081,80.1593117
+51,7966811036,16,"Velachery Mudhanmai Salai, Gowriwakkam (12.9236N)",12.9235567,80.1593225
+51,9400398346,17,"Velachery Mudhanmai Salai, Gowriwakkam (Route 51)",12.920928,80.1679701
+51,9400398345,18,"Velachery Mudhanmai Salai, Gowriwakkam (Route 51) #2",12.9209495,80.1679764
+51,9400398347,19,"Velachery Mudhanmai Salai, Gowriwakkam (12.9200N)",12.9199655,80.1709299
+51,1693491914,20,"Velachery Mudhanmai Salai, Gowriwakkam (12.9200N) #2",12.9200019,80.170946
+51,9400398349,21,"Velachery Mudhanmai Salai, Gowriwakkam (Route 51) #3",12.9184602,80.176761
+51,9400398348,22,"Velachery Mudhanmai Salai, Gowriwakkam (Route 51) #4",12.9184967,80.1767624
+51,9402032623,23,"Velachery Mudhanmai Salai, Gowriwakkam (Route 51) #5",12.9197846,80.1711521
+51,694064191,24,Velachery Mudhanmai Salai (12.9206),12.9205917,80.184473
+51,1937584276,25,"Velachery Mudhanmai Salai, Jayachandran Nagar",12.917249,80.1937685
+51,9400398352,26,"Velachery Mudhanmai Salai, Jayachandran Nagar (Route 51)",12.9173172,80.1936779
+51,9400398354,27,"Velachery Mudhanmai Salai, Zone 14 Perungudi",12.9211347,80.1968921
+51,9400398373,28,"Velachery Mudhanmai Salai, Zone 14 Perungudi (Route 51)",12.9260488,80.1974863
+51,9400398372,29,"Velachery Mudhanmai Salai, Zone 14 Perungudi (Route 51) #2",12.9260465,80.1974301
+51,978589169,30,"Velachery Mudhanmai Salai, Zone 14 Perungudi (Route 51) #3",12.9290185,80.2025986
+51,1666841444,31,"Velachery Mudhanmai Salai, Zone 14 Perungudi (Route 51) #4",12.9290533,80.20255
+51,9400398375,32,"Velachery Mudhanmai Salai, Zone 14 Perungudi (Route 51) #5",12.9336154,80.2038226
+51,9400398374,33,"Velachery Mudhanmai Salai, Zone 14 Perungudi (Route 51) #6",12.9336313,80.2037553
+51,9400398377,34,"Velachery Mudhanmai Salai, Zone 14 Perungudi (Route 51) #7",12.9404262,80.2056812
+51,978588586,35,"Velachery Mudhanmai Salai, Zone 14 Perungudi (Route 51) #8",12.9404138,80.2056611
+51,9404967419,36,"Velachery Mudhanmai Salai, Zone 14 Perungudi (Route 51) #9",12.9443297,80.208265
+51,9400398378,37,"Velachery Mudhanmai Salai, Zone 14 Perungudi (Route 51) #10",12.9442869,80.2082021
+51,9400398380,38,"CMWSSB Division 188, Zone 14 Perungudi",12.9487729,80.2098975
+51,9400398379,39,"Pallavaram - Thoraipakkam Road, Zone 14 Perungudi",12.948759,80.2098257
+51,9400398382,40,"Velachery Main Road, Zone 14 Perungudi",12.953444,80.2118662
+51,9400398381,41,"Velachery Main Road, Zone 14 Perungudi (Route 51)",12.9534266,80.211823
+51,9400398383,42,"Velachery Main Road, Zone 14 Perungudi (12.9639N)",12.9638777,80.2160234
+51,1949567462,43,"Velachery Main Road, Zone 14 Perungudi (12.9639N) #2",12.9639064,80.2159702
+51,9400398385,44,"Velachery Main Road, Zone 13 Adyar",12.9713022,80.2190042
+51,1764308008,45,"Velachery Main Road, Zone 13 Adyar (12.9713N)",12.9712721,80.2189421
+51,278744710,46,"Taramani Road, Zone 13 Adyar (12.9760N)",12.975951,80.2210664
+588C,5400380243,1,Jawaharlal Nehru Road (100 Feet Road),13.0692359,80.2065633
+588C,5400382522,2,Jawaharlal Nehru Road (100 Feet Road) (13.0651N),13.0651401,80.2112943
+588C,9903138577,3,Jawaharlal Nehru Road (100 Feet Road) (13.0651N) #2,13.0650987,80.2112453
+588C,5400382521,4,Jawaharlal Nehru Road (100 Feet Road) (13.0580N),13.0580044,80.2116987
+588C,9903138576,5,Jawaharlal Nehru Road (100 Feet Road) (Route 588C),13.0580042,80.2116331
+588C,5400381618,6,Jawaharlal Nehru Road,13.0476117,80.2123446
+588C,9412862313,7,Inner Ring Road,13.0342862,80.2122277
+588C,9412862312,8,Inner Ring Road (13.0343N),13.0343027,80.2121485
+588C,5228342635,9,Inner Ring Road (13.0243N),13.0243263,80.2069943
+588C,9925164646,10,Inner Ring Road (Route 588C),13.0243279,80.2069309
+588C,5227454884,11,Inner Ring Road (13.0191N),13.0191075,80.2064422
+588C,308313775,12,Inner Ring Road (Route 588C) #2,13.0191024,80.2063609
+588C,4221779489,13,Inner Ring Road (13.0141N),13.0140912,80.2045927
+588C,9925164645,14,Inner Ring Road (Route 588C) #3,13.0141061,80.2045404
+588C,5631301429,15,Anna Salai (Mount Road),13.0089182,80.2111924
+588C,366083028,16,Anna Salai (Mount Road) (13.0089N),13.0088683,80.2112087
+588C,3263015892,17,Taluk Office Road,13.0143216,80.2262688
+588C,3263017226,18,Sardar Patel Road - CMWSSB Division 171 (Route 588C),13.0083174,80.2334438
+588C,1971862196,19,Sardar Patel Road - CMWSSB Division 171,13.0082459,80.2334763
+588C,9925164644,20,Gandhi Mandapam Flyover - CMWSSB Division 172,13.0067764,80.2407171
+588C,310100943,21,Sardar Patel Road - CMWSSB Division 172,13.0068649,80.2407247
+588C,9925164643,22,Service Road - CMWSSB Division 172,13.0060208,80.2474155
+588C,325191477,23,Rajiv Gandhi IT Expressway - CMWSSB Division 172 (13.0062N),13.0061894,80.2475374
+588C,310102879,24,Rajiv Gandhi IT Expressway - CMWSSB Division 172 (13.0034N),13.0034175,80.2475947
+588C,1183430650,25,OMR Service Road Flyover - CMWSSB Division 175,12.9981822,80.2489226
+588C,9506980944,26,Rajiv Gandhi IT Expressway - CMWSSB Division 172 (12.9982N),12.9981705,80.2488385
+588C,1183430887,27,Rajiv Gandhi IT Expressway - CMWSSB Division 180 (12.9911N),12.9911334,80.2506682
+588C,9925164642,28,Rajiv Gandhi IT Expressway - CMWSSB Division 180 (Route 588C),12.9911149,80.2506166
+588C,9925164641,29,East Coast Road - CMWSSB Division 182,12.9767683,80.2591481
+588C,5332440110,30,East Coast Road - CMWSSB Division 182 (Route 588C),12.976764,80.2592029
+5C,7412932325,1,Netaji Subhash Chandra Bose Road,13.0883365,80.2838631
+5C,1676204856,2,"Taramani Road, Zone 13 Adyar (Route 5C)",12.9863612,80.2444706
+5C,2482072870,3,General Hospital Road (13.0819N),13.0818538,80.2775047
+5C,2482072921,4,Pallavan Salai - CMWSSB Division 59,13.0763656,80.276459
+5C,309062093,5,Anna Salai (Mount Road) - CMWSSB Division 59,13.0702882,80.2738035
+5C,5460685950,6,General Patters Road - CMWSSB Division 63,13.0653877,80.2676197
+5C,243064594,7,General Patters Road - CMWSSB Division 63 (Route 5C),13.0608709,80.2652174
+5C,1311558791,8,Westcott Road - CMWSSB Division 115,13.057111,80.2649869
+5C,414712727,9,Westcott Road - CMWSSB Division 115 (Route 5C),13.0546528,80.26443
+5C,259662367,10,CMWSSB Division 119 - Chennai Corporation,13.0524541,80.26382
+5C,7416129840,11,TTK Road - CMWSSB Division 119,13.0470978,80.260961
+5C,7412932327,12,CMWSSB Division 119 - Chennai Corporation (Route 5C),13.0390729,80.2575264
+5C,301736913,13,CV Raman Road - CMWSSB Division 123,13.0351077,80.2571309
+5C,7412932329,14,Gandhi Mandapam Road - CMWSSB Division 172,13.0231055,80.2427833
+5C,7412932330,15,Gandhi Mandapam Road - CMWSSB Division 172 (Route 5C),13.0185768,80.2413141
+5C,7412932331,16,Gandhi Mandapam Road - CMWSSB Division 172 (Route 5C) #2,13.0100519,80.2405691
+5C,325191477,17,Rajiv Gandhi IT Expressway - CMWSSB Division 172 (13.0062N),13.0061894,80.2475374
+5C,310102879,18,Rajiv Gandhi IT Expressway - CMWSSB Division 172 (13.0034N),13.0034175,80.2475947
+5C,9506980944,19,Rajiv Gandhi IT Expressway - CMWSSB Division 172 (12.9982N),12.9981705,80.2488385
+5C,1183430650,20,OMR Service Road Flyover - CMWSSB Division 175,12.9981822,80.2489226
+5C,1183430887,21,Rajiv Gandhi IT Expressway - CMWSSB Division 180 (12.9911N),12.9911334,80.2506682
+5C,7412932332,22,Taramani Road - CMWSSB Division 180,12.9862169,80.2468241
+76,9412862312,1,Inner Ring Road (13.0343N),13.0343027,80.2121485
+76,9412862313,2,Inner Ring Road,13.0342862,80.2122277
+76,9417619430,3,"Mount - Medavakkam Road, Zone 14 Perungudi",12.9725284,80.1914999
+76,9417619442,4,"Mount - Medavakkam Road, Nanganallur",12.9682552,80.189596
+76,9417619443,5,"Mount - Medavakkam Road, Nanganallur (12.9682N)",12.9682417,80.1896401
+76,9417619438,6,"Mount - Medavakkam Road, Keelkattalai",12.9559551,80.1869989
+76,9417619436,7,"Medavakkam Main Road, Keelkattalai",12.9486369,80.1851774
+76,9526179500,8,"Medavakkam Main Road, Nanmangalam",12.9392448,80.182525
+76,9402032622,9,Velachery Mudhanmai Salai (12.9198),12.9198056,80.1825618
+76,9402032621,10,Velachery Mudhanmai Salai (12.9198) (Route 76),12.9198324,80.1825361
+76,9522345425,11,"Mount - Medavakkam Road, Ullagaram (Route 76)",12.9648478,80.188233
+76,5228342635,12,Inner Ring Road (13.0243N),13.0243263,80.2069943
+76,4221779489,13,Inner Ring Road (13.0141N),13.0140912,80.2045927
+76,5400380243,14,Jawaharlal Nehru Road (100 Feet Road),13.0692359,80.2065633
+76,5227454884,15,Inner Ring Road (13.0191N),13.0191075,80.2064422
+76,5400382521,16,Jawaharlal Nehru Road (100 Feet Road) (13.0580N),13.0580044,80.2116987
+D51ET,278744710,1,"Taramani Road, Zone 13 Adyar (12.9760N)",12.975951,80.2210664
+D51ET,313159416,2,"Velachery Main Road, Zone 13 Adyar (12.9910N)",12.9909681,80.2199873
+D70,7796477468,1,2nd Main Road - CMWSSB Division 86,13.0994583,80.1702657
+D70,278744710,2,"Taramani Road, Zone 13 Adyar (12.9760N)",12.975951,80.2210664
+D70,9370267242,3,"Velachery Main Road, Zone 13 Adyar (12.9830N)",12.9829795,80.2219649
+D70,313159416,4,"Velachery Main Road, Zone 13 Adyar (12.9910N)",12.9909681,80.2199873
+D70,9370267244,5,"Five Furlong Road, Zone 13 Adyar (12.9977N)",12.9976865,80.2159576
+D70,4221572806,6,"Five Furlong Road, Zone 13 Adyar (13.0036N)",13.0036032,80.2119807
+D70,3264712469,7,"MKN Road, Ward 160",13.0072847,80.2097658
+D70,9370267245,8,"Inner Ring Road, Zone 13 Adyar",13.0148569,80.2045846
+D70,5355818030,9,"Inner Ring Road, Zone 13 Adyar (13.0186N)",13.0186408,80.2059235
+D70,5228340704,10,"Inner Ring Road, Zone 13 Adyar (13.0244N)",13.0243667,80.2066739
+D70,1024562407,11,"Jawaharlal Nehru Road (100 Feet Road), Zone 10 Kodambakkam",13.0350618,80.2119045
+D70,5318529343,12,"Jawaharlal Nehru Road (100 Feet Road), Zone 10 Kodambakkam (13.0468N)",13.0468396,80.2121426
+D70,1007625832,13,"Vadapalani Flyover, Zone 10 Kodambakkam",13.0488793,80.211988
+D70,5318530216,14,"Jawaharlal Nehru Road (100 Feet Road), Zone 10 Kodambakkam (13.0540N)",13.053955,80.2114618
+D70,5318537692,15,"Jawaharlal Nehru Road (100 Feet Road), Zone 8 Anna Nagar",13.0630102,80.2115596
+D70,5320093328,16,"Jawaharlal Nehru Road (100 Feet Road), Zone 7 Ambattur",13.082197,80.1983699
+D70,5239594891,17,"Thirumangalam – Mogappair Road, Zone 8 Anna Nagar",13.0870648,80.1981881
+D70,5394822729,18,"Thirumangalam – Mogappair Road, Zone 7 Ambattur",13.0875626,80.1893914
+D70,7796505767,19,"Ambattur Estate Road, Zone 7 Ambattur",13.0884416,80.172007
+D70,9370309976,20,"2nd Main Road, Zone 7 Ambattur",13.0890597,80.1694157
+D70,5631301424,21,"Five Furlong Road, Zone 13 Adyar (Route D70)",12.9974701,80.2162966
+D70,4739613829,22,"Jawaharlal Nehru Road (100 Feet Road), Zone 10 Kodambakkam (13.0736N)",13.0735659,80.2003418
+D70,11959583813,23,"Velachery Main Road, Zone 13 Adyar (12.9829N)",12.9829338,80.2219894
+D70,9370267243,24,"Velachery Main Road, Zone 13 Adyar (12.9865N)",12.9864532,80.2229117
+D70,11959599075,25,"Velachery Main Road, Zone 13 Adyar (Route D70)",12.9903945,80.2203974
+D70,11959599076,26,"Five Furlong Road, Zone 13 Adyar (Route D70) #2",12.9977277,80.2160004
+D70,11959593354,27,"Inner Ring Road, Zone 13 Adyar (Route D70)",13.0148395,80.2046476
+D70,11959593355,28,"Inner Ring Road, Zone 13 Adyar (Route D70) #2",13.0186308,80.2059629
+D70,11959593356,29,"Inner Ring Road, Zone 13 Adyar (Route D70) #3",13.02436,80.2067601
+D70,11959593357,30,"Inner Ring Road, Zone 10 Kodambakkam (Route D70)",13.0316093,80.2093455
+D70,11959593358,31,"Inner Ring Road, Zone 10 Kodambakkam (Route D70) #2",13.0315928,80.2093923
+D70,11959593359,32,"Inner Ring Road, Zone 10 Kodambakkam (Route D70) #3",13.0351053,80.2111984
+D70,11959593361,33,"Inner Ring Road, Zone 10 Kodambakkam (Route D70) #4",13.0350987,80.2111199
+D70,11959617427,34,"Jawaharlal Nehru Road (100 Feet Road), Zone 10 Kodambakkam (Route D70)",13.0462851,80.2121116
+D70,11959617428,35,"Jawaharlal Nehru Road (100 Feet Road), Zone 10 Kodambakkam (Route D70) #2",13.046284,80.2121909
+D70CT,278744710,1,"Taramani Road, Zone 13 Adyar (12.9760N)",12.975951,80.2210664
+D70CT,313159416,2,"Velachery Main Road, Zone 13 Adyar (12.9910N)",12.9909681,80.2199873
+E18,9400398388,1,"Grand Southern Trunk Road, East Tambaram",12.9276798,80.1187584
+E18,366083028,2,Anna Salai (Mount Road) (13.0089N),13.0088683,80.2112087
+E18,9412787734,3,"Anna Salai (Mount Road), Zone 13 Adyar (13.0155N)",13.0155164,80.2250894
+M1,9676647822,1,"Keelkattalai Bus Stand Service Road, Keelkattalai",12.956068,80.1862921
+M1,5631301107,2,"Thiruvalluvar Road, Zone 13 Adyar",12.9872302,80.2593997
+M1,9412787723,3,"Madipakkam - Velachery Road, Zone 14 Perungudi",12.9648168,80.1963361
+M1,9412787724,4,"Madipakkam - Velachery Road, Zone 14 Perungudi (12.9649N)",12.9648849,80.1962538
+M1,338250257,5,"Madipakkam - Velachery Road, Zone 14 Perungudi (12.9655N)",12.9655423,80.2003456
+M1,9412787725,6,"Bazaar Road, Zone 14 Perungudi",12.965438,80.2013584
+M1,9412787728,7,"Bazaar Road, Zone 14 Perungudi (12.9656N)",12.9656308,80.2043863
+M1,9412787729,8,"Bazaar Road, Zone 14 Perungudi (12.9658N)",12.9658462,80.2031164
+M1,277912055,9,"CMWSSB Division 169, Zone 14 Perungudi",12.9652732,80.2071039
+M1,9412787727,10,"Bazaar Road, Zone 14 Perungudi (12.9653N)",12.9653278,80.2069929
+M1,9400398383,11,"Velachery Main Road, Zone 14 Perungudi (12.9639N)",12.9638777,80.2160234
+M1,1949567462,12,"Velachery Main Road, Zone 14 Perungudi (12.9639N) #2",12.9639064,80.2159702
+M1,9400398385,13,"Velachery Main Road, Zone 13 Adyar",12.9713022,80.2190042
+M1,1764308008,14,"Velachery Main Road, Zone 13 Adyar (12.9713N)",12.9712721,80.2189421
+M1,9500730227,15,"Taramani Link Road, Zone 13 Adyar (12.9762N)",12.9762478,80.2215821
+M1,9370524480,16,"Taramani Link Road, Zone 13 Adyar (12.9763N)",12.9762731,80.221563
+M1,4172727623,17,"Taramani Link Road, Zone 13 Adyar",12.9785526,80.2253586
+M1,9500730225,18,"Service Road, Zone 13 Adyar",12.9786209,80.2253008
+M1,9399662897,19,"Taramani Link Road, Zone 13 Adyar (Route M1)",12.9806111,80.228782
+M1,3298619178,20,"Taramani Link Road, Zone 13 Adyar (Route M1) #2",12.980629,80.2287544
+M1,3298619179,21,"Taramani Link Road, Zone 13 Adyar (12.9817N)",12.9817095,80.2303946
+M1,4358666333,22,"Taramani Link Road, Zone 13 Adyar (Route M1) #3",12.981636,80.2334748
+M1,5631301114,23,"Taramani Link Road, Zone 13 Adyar (12.9817N) #2",12.9816579,80.233499
+M1,9399815495,24,"Taramani Link Road, Zone 13 Adyar (12.9814N)",12.9814019,80.2427193
+M1,9399815493,25,"Taramani Link Road, Zone 13 Adyar (12.9814N) #2",12.9814108,80.2427068
+M1,9500730223,26,"Taramani Link Road, Zone 13 Adyar (12.9803N)",12.9803011,80.2514556
+M1,9500730222,27,"Rajiv Gandhi IT Expressway, Zone 13 Adyar",12.9831713,80.2525253
+M1,9370524481,28,"Rajiv Gandhi IT Expressway, Zone 13 Adyar (12.9832N)",12.983168,80.2524814
+M1,1240545660,29,"West Avenue Road, Zone 13 Adyar",12.9880545,80.2524511
+M18C,9920647758,1,"Madley Road, Zone 10 Kodambakkam",13.0345423,80.2300791
+M18C,7433365963,2,"Sardar Patel Road, Zone 13 Adyar (Route M18C)",13.011873,80.2219855
+M18C,256039818,3,"Anna Salai (Mount Road), Ward 160",13.0080754,80.2093905
+M18C,9417619442,4,"Mount - Medavakkam Road, Nanganallur",12.9682552,80.189596
+M18C,9412787735,5,"Anna Salai (Mount Road), Zone 13 Adyar (13.0221N)",13.0221111,80.226294
+M18C,9412787736,6,"1st Main Road, Zone 13 Adyar",13.0279977,80.2309273
+M18C,6497450229,7,"South Usman Road, Zone 10 Kodambakkam (13.0343N)",13.0342592,80.230369
+M70,5400382522,1,Jawaharlal Nehru Road (100 Feet Road) (13.0651N),13.0651401,80.2112943
+M70,5400382521,2,Jawaharlal Nehru Road (100 Feet Road) (13.0580N),13.0580044,80.2116987
+M70,5400381618,3,Jawaharlal Nehru Road,13.0476117,80.2123446
+M70,5228342635,4,Inner Ring Road (13.0243N),13.0243263,80.2069943
+M70,5227454884,5,Inner Ring Road (13.0191N),13.0191075,80.2064422
+M70,4221779489,6,Inner Ring Road (13.0141N),13.0140912,80.2045927
+M70,5631301118,7,"Velachery Main Road, Zone 13 Adyar (12.9907N)",12.9906984,80.2202958
+M70,313159416,8,"Velachery Main Road, Zone 13 Adyar (12.9910N)",12.9909681,80.2199873
+M70,5631301114,9,"Taramani Link Road, Zone 13 Adyar (12.9817N) #2",12.9816579,80.233499
+M70,3298619179,10,"Taramani Link Road, Zone 13 Adyar (12.9817N)",12.9817095,80.2303946
+M70,9370524481,11,"Rajiv Gandhi IT Expressway, Zone 13 Adyar (12.9832N)",12.983168,80.2524814
+M70,9399815494,12,"Taramani Link Road, Zone 13 Adyar (Route M70)",12.9812324,80.2427187
+M70,9903138577,13,Jawaharlal Nehru Road (100 Feet Road) (13.0651N) #2,13.0650987,80.2112453
+M70,9500680215,14,"Taramani Link Road, Zone 13 Adyar (Route M70) #2",12.9804402,80.2286896
+M70,9500680214,15,"Taramani Link Road, Zone 13 Adyar (Route M70) #3",12.9784111,80.2253294
+M70,2157590801,16,"Five Furlong Road, Zone 13 Adyar",12.997438,80.2162638
+M70,9370267244,17,"Five Furlong Road, Zone 13 Adyar (12.9977N)",12.9976865,80.2159576
+M70,4221572806,18,"Five Furlong Road, Zone 13 Adyar (13.0036N)",13.0036032,80.2119807
+M70,309812160,19,"MKN Road, Ward 160 (Route M70)",13.0076778,80.2099257
+M70,1007625852,20,"MKN Road, Ward 160 (Route M70) #2",13.007729,80.2098628
+M70,9370267245,21,"Inner Ring Road, Zone 13 Adyar",13.0148569,80.2045846
+M70,5355818030,22,"Inner Ring Road, Zone 13 Adyar (13.0186N)",13.0186408,80.2059235
+M70,5228340704,23,"Inner Ring Road, Zone 13 Adyar (13.0244N)",13.0243667,80.2066739
+M70,308317064,24,"Inner Ring Road, Zone 10 Kodambakkam",13.0348314,80.2118803
+M70,1024562407,25,"Jawaharlal Nehru Road (100 Feet Road), Zone 10 Kodambakkam",13.0350618,80.2119045
+M70,5318530216,26,"Jawaharlal Nehru Road (100 Feet Road), Zone 10 Kodambakkam (13.0540N)",13.053955,80.2114618
+M70,5318529343,27,"Jawaharlal Nehru Road (100 Feet Road), Zone 10 Kodambakkam (13.0468N)",13.0468396,80.2121426
+S13,278744710,1,"Taramani Road, Zone 13 Adyar (12.9760N)",12.975951,80.2210664
+S13,10120161717,2,"Taramani Road, Zone 13 Adyar (Route S13)",12.975928,80.2211155
+S13,9402008106,3,"Velachery Main Road, Zone 13 Adyar (Route S13)",12.9712086,80.2192719
+S13,8601096138,4,"Velachery Main Road, Zone 13 Adyar (Route S13) #2",12.9712759,80.219131
+S13,9417619444,5,"City Link Road, Ward 161 (Route S13)",12.994701,80.206559
+S13,401769773,6,"City Link Road, Ward 161 (Route S13) #2",12.9947061,80.206537
+S13,11949359786,7,"Kakkan Nagar Main Road, Ward 163",12.9919179,80.2058126
+S13,299882966,8,"1st Cross Road, Ward 165",12.9810098,80.2066688
+S13,11949365493,9,"Kakkan Nagar Main Road, Ward 163 (Route S13)",12.9891277,80.2048999
+S13,11949365490,10,"Brindavan Nagar Main Road, Zone 13 Adyar",12.9871331,80.2053644
+S13,11949365488,11,"Brindavan Nagar Main Road, Zone 13 Adyar (Route S13)",12.9844281,80.2049489
+S43,12188084884,1,"Redhills Road, Zone 8 Anna Nagar",13.1083791,80.2059605
+S43,12188084882,2,"3rd Main RoAD, Zone 8 Anna Nagar",13.1139224,80.2067223
+S43,12188084880,3,"Kolathur Main Road, Zone 8 Anna Nagar",13.1185173,80.205062
+S43,12188084879,4,"Jawaharlal Nehru Road (100 Feet Road), Zone 7 Ambattur (Route S43)",13.1228548,80.2015899
+S43,1109183357,5,"Jawaharlal Nehru Road (100 Feet Road), Zone 7 Ambattur (Route S43) #2",13.1210128,80.1998698
+S43,12155348708,6,"Orchid Springss Road, Zone 7 Ambattur",13.1269583,80.1942278
+S43,12155348710,7,"Madanankuppam Road, Zone 3 Madhavaram",13.1354867,80.190348
+S43,12202926833,8,"Vanagaram - Ambathur - Puzhal Road, Zone 7 Ambattur",13.1326681,80.1734513
+S43,12202926834,9,"Vanagaram - Ambathur - Puzhal Road, Zone 7 Ambattur (Route S43)",13.13207,80.1717346
+S43,12202926835,10,"Vanagaram - Ambathur - Puzhal Road, Zone 7 Ambattur (Route S43) #2",13.1319864,80.1696533
+S43,12202926836,11,"Vanagaram - Ambathur - Puzhal Road, Zone 7 Ambattur (Route S43) #3",13.1319368,80.1652464
+S43,12202926837,12,"Vanagaram - Ambathur - Puzhal Road, Zone 7 Ambattur (Route S43) #4",13.1303565,80.1585784
+S570,577362217,1,"MTC Busway, Zone 10 Kodambakkam",13.0687582,80.2052047
+S570,9903138577,2,Jawaharlal Nehru Road (100 Feet Road) (13.0651N) #2,13.0650987,80.2112453
+S570,5400382522,3,Jawaharlal Nehru Road (100 Feet Road) (13.0651N),13.0651401,80.2112943
+S570,5400382521,4,Jawaharlal Nehru Road (100 Feet Road) (13.0580N),13.0580044,80.2116987
+S570,9412862312,5,Inner Ring Road (13.0343N),13.0343027,80.2121485
+S570,9412862313,6,Inner Ring Road,13.0342862,80.2122277
+S570,5228342635,7,Inner Ring Road (13.0243N),13.0243263,80.2069943
+S570,5227454884,8,Inner Ring Road (13.0191N),13.0191075,80.2064422
+S570,4221779489,9,Inner Ring Road (13.0141N),13.0140912,80.2045927
+S570,366083028,10,Anna Salai (Mount Road) (13.0089N),13.0088683,80.2112087
+S570,5631301429,11,Anna Salai (Mount Road),13.0089182,80.2111924
+S570,9514055815,12,"Anna Salai (Mount Road), Zone 13 Adyar",13.0121297,80.2202503
+S570,365983874,13,"Taluk Office Road, Zone 13 Adyar",13.013981,80.2265266
+S570,300316947,14,"Racecourse Road, Zone 13 Adyar",13.0081325,80.2133106
+S570,9368672356,15,"Velachery Main Road, Zone 13 Adyar (12.9910N) #2",12.9909955,80.2200242
+S570,5631301118,16,"Velachery Main Road, Zone 13 Adyar (12.9907N)",12.9906984,80.2202958
+S570,9399662898,17,"Velachery Main Road, Zone 13 Adyar (Route S570)",12.99071,80.2201775
+S570,4358676514,18,"Velachery Main Road, Zone 13 Adyar (Route S570) #2",12.9877973,80.2230746
+S570,9412787731,19,"Velachery Main Road, Zone 13 Adyar (12.9865N) #2",12.9864666,80.2229705
+S570,9370524480,20,"Taramani Link Road, Zone 13 Adyar (12.9763N)",12.9762731,80.221563
+S570,9500730227,21,"Taramani Link Road, Zone 13 Adyar (12.9762N)",12.9762478,80.2215821
+S570,4172727623,22,"Taramani Link Road, Zone 13 Adyar",12.9785526,80.2253586
+S570,9500730225,23,"Service Road, Zone 13 Adyar",12.9786209,80.2253008
+S570,3298619179,24,"Taramani Link Road, Zone 13 Adyar (12.9817N)",12.9817095,80.2303946
+S570,9399815495,25,"Taramani Link Road, Zone 13 Adyar (12.9814N)",12.9814019,80.2427193
+S570,9399815493,26,"Taramani Link Road, Zone 13 Adyar (12.9814N) #2",12.9814108,80.2427068
+S570,9500730223,27,"Taramani Link Road, Zone 13 Adyar (12.9803N)",12.9803011,80.2514556
+S570,7412854052,28,Rajiv Gandhi Salai - CMWSSB Division 183,12.9729954,80.2502408
+S570,1457114931,29,Old Mahapalipuram Service Road - CMWSSB Division 183 (12.9669N),12.9669208,80.2482764
+S570,2082925106,30,"OMR Service Road, Thuraipakkam",12.945991,80.2396626
+S570,2083090321,31,"OMR Service Road, Zone 15 Sholinganallur",12.9394621,80.2357344
+S570,5093966251,32,"Rajiv Gandhi Salai, Zone 15 Sholinganallur",12.8988445,80.2279854
+S570,7113711101,33,"Rajiv Gandhi Salai, Padur",12.7861984,80.2204283
+S570,11959583813,34,"Velachery Main Road, Zone 13 Adyar (12.9829N)",12.9829338,80.2219894
+S570,11959583808,35,"Velachery Main Road, Zone 13 Adyar (Route S570) #3",12.9828708,80.2220062
+V51,9400398388,1,"Grand Southern Trunk Road, East Tambaram",12.9276798,80.1187584
+V51,9400398389,2,"Grand Southern Trunk Road, East Tambaram (12.9274N)",12.9273885,80.1184664
+V51,9400398338,3,"Velachery Mudhanmai Salai, East Tambaram",12.9233654,80.1206423
+V51,3016144953,4,"Velachery Mudhanmai Salai, East Tambaram (12.9234N)",12.9234246,80.1206459
+V51,9412758115,5,"Velachery Mudhanmai Salai, East Tambaram (Route V51)",12.9227473,80.1330624
+V51,3016141192,6,"Velachery Mudhanmai Salai, East Tambaram (Route V51) #2",12.9227845,80.1330579
+V51,9400398339,7,"Velachery Mudhanmai Salai, East Tambaram (12.9228N)",12.9228177,80.1311711
+V51,3016141193,8,"Velachery Mudhanmai Salai, East Tambaram (12.9229N)",12.9228855,80.1311754
+V51,9400398340,9,"Velachery Mudhanmai Salai, Chitlapakkam",12.9225505,80.1436777
+V51,3016129434,10,"Velachery Mudhanmai Salai, Chitlapakkam (12.9226N)",12.9226099,80.1436734
+V51,9400398341,11,"Velachery Mudhanmai Salai, Gowriwakkam",12.9234344,80.1545734
+V51,5090924222,12,"Velachery Mudhanmai Salai, Gowriwakkam (12.9235N)",12.923495,80.1545664
+V51,9400398344,13,"Velachery Mudhanmai Salai, Gowriwakkam (12.9235N) #2",12.9235081,80.1593117
+V51,7966811036,14,"Velachery Mudhanmai Salai, Gowriwakkam (12.9236N)",12.9235567,80.1593225
+V51,9400398347,15,"Velachery Mudhanmai Salai, Gowriwakkam (12.9200N)",12.9199655,80.1709299
+V51,1693491914,16,"Velachery Mudhanmai Salai, Gowriwakkam (12.9200N) #2",12.9200019,80.170946
+V51,9526179499,17,"Mount - Medavakkam Road, Nanmangalam",12.9387939,80.1823586
+V51,9412787718,18,"Mount - Medavakkam Road, Keelkattalai (Route V51)",12.9486549,80.1851006
+V51,9412787720,19,"Mount - Medavakkam Road, Keelkattalai (Route V51) #2",12.955952,80.1868305
+V51,9412787721,20,"Sabari Salai, Zone 14 Perungudi",12.9653705,80.1915804
+V51,9412787723,21,"Madipakkam - Velachery Road, Zone 14 Perungudi",12.9648168,80.1963361
+V51,9412787724,22,"Madipakkam - Velachery Road, Zone 14 Perungudi (12.9649N)",12.9648849,80.1962538
+V51,338250257,23,"Madipakkam - Velachery Road, Zone 14 Perungudi (12.9655N)",12.9655423,80.2003456
+V51,9412787725,24,"Bazaar Road, Zone 14 Perungudi",12.965438,80.2013584
+V51,9412787728,25,"Bazaar Road, Zone 14 Perungudi (12.9656N)",12.9656308,80.2043863
+V51,9412787729,26,"Bazaar Road, Zone 14 Perungudi (12.9658N)",12.9658462,80.2031164
+V51,277912055,27,"CMWSSB Division 169, Zone 14 Perungudi",12.9652732,80.2071039
+V51,9412787727,28,"Bazaar Road, Zone 14 Perungudi (12.9653N)",12.9653278,80.2069929
+V51,9400398383,29,"Velachery Main Road, Zone 14 Perungudi (12.9639N)",12.9638777,80.2160234
+V51,1949567462,30,"Velachery Main Road, Zone 14 Perungudi (12.9639N) #2",12.9639064,80.2159702
+V51,9400398385,31,"Velachery Main Road, Zone 13 Adyar",12.9713022,80.2190042
+V51,1764308008,32,"Velachery Main Road, Zone 13 Adyar (12.9713N)",12.9712721,80.2189421
+V51,278744710,33,"Taramani Road, Zone 13 Adyar (12.9760N)",12.975951,80.2210664
+V51,9370267242,34,"Velachery Main Road, Zone 13 Adyar (12.9830N)",12.9829795,80.2219649
+V51,9412787731,35,"Velachery Main Road, Zone 13 Adyar (12.9865N) #2",12.9864666,80.2229705
+V51,9370267243,36,"Velachery Main Road, Zone 13 Adyar (12.9865N)",12.9864532,80.2229117
+V51,9368672356,37,"Velachery Main Road, Zone 13 Adyar (12.9910N) #2",12.9909955,80.2200242
+V51,313159416,38,"Velachery Main Road, Zone 13 Adyar (12.9910N)",12.9909681,80.2199873
+V51,2158620129,39,"Velachery Main Road, Zone 13 Adyar (Route V51)",12.9974127,80.2164502
+V51,5631301426,40,"Velachery Main Road, Zone 13 Adyar (Route V51) #2",12.9974859,80.2164321
+V51,9412787732,41,"Velachery Main Road, Zone 13 Adyar (Route V51) #3",13.0048514,80.2202225
+V51,9412787734,42,"Anna Salai (Mount Road), Zone 13 Adyar (13.0155N)",13.0155164,80.2250894
+V51,3264883515,43,"Anna Salai (Mount Road), Zone 13 Adyar (Route V51)",13.0155768,80.225033
+V51,9412787735,44,"Anna Salai (Mount Road), Zone 13 Adyar (13.0221N)",13.0221111,80.226294
+V51,3263010049,45,"Anna Salai (Mount Road), Zone 13 Adyar (Route V51) #2",13.0221248,80.2262769
+V51,9412787736,46,"1st Main Road, Zone 13 Adyar",13.0279977,80.2309273
+V51,6497450229,47,"South Usman Road, Zone 10 Kodambakkam (13.0343N)",13.0342592,80.230369
+V51,11959583813,48,"Velachery Main Road, Zone 13 Adyar (12.9829N)",12.9829338,80.2219894
