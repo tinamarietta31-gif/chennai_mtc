@@ -11,10 +11,14 @@ from urllib.parse import unquote
 class DataLoader:
     def __init__(self):
         # Dynamically determine the base path (project root)
-        # This allows it to work both locally and in Docker/GCP
-        self.base_path = os.getenv("DATA_BASE_PATH", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-        if os.path.basename(self.base_path) == "core":
-            self.base_path = os.path.dirname(self.base_path)
+        # Structure: root/backend/core/data_loader.py
+        # We need to go up 3 levels to reach root
+        current_file = os.path.abspath(__file__)
+        core_dir = os.path.dirname(current_file)
+        backend_dir = os.path.dirname(core_dir)
+        root_dir = os.path.dirname(backend_dir)
+        
+        self.base_path = os.getenv("DATA_BASE_PATH", root_dir)
             
         print(f"📂 Initializing DataLoader with base path: {self.base_path}")
         self.stops_df = None
