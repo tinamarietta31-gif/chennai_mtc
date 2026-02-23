@@ -15,6 +15,7 @@ function App() {
   const [selectedBusId, setSelectedBusId] = useState(null);
   const [isSearchActive, setIsSearchActive] = useState(false);
   const [isRoutesExpanded, setIsRoutesExpanded] = useState(false);
+  const [sheetState, setSheetState] = useState('minimized'); // 'minimized', 'half', 'expanded'
 
   // App-level environment state
   const [weatherCondition, setWeatherCondition] = useState('clear');
@@ -87,8 +88,7 @@ function App() {
   };
 
   return (
-    <div className={`relative w-full h-screen overflow-hidden bg-background font-sans text-slate-100 transition-colors duration-1000 ${trafficCondition === 'very_heavy' ? 'hue-rotate-15' : ''
-      }`}>
+    <div className={`relative w-full h-screen overflow-hidden bg-background font-sans text-slate-100 transition-colors duration-1000 ${trafficCondition === 'very_heavy' ? 'hue-rotate-15' : ''}`}>
       {/* Absolute Fullscreen Map Layer */}
       <div className="absolute inset-0 z-0">
         <MapView
@@ -122,87 +122,142 @@ function App() {
         </div>
       )}
 
-      {/* Floating UI Container (Left Panel - Active Search State) */}
+      {/* Floating UI Container */}
       {isSearchActive && (
-        <div className="absolute top-[104px] left-0 sm:left-4 right-0 sm:right-auto bottom-4 px-4 sm:px-0 w-full sm:w-[420px] z-40 flex flex-col gap-4 pointer-events-none transition-all duration-500 animate-slideRight">
-
-          {/* Unified Header & Route Results Accordion */}
-          <div className="pointer-events-auto shrink-0 flex flex-col glass-panel overflow-hidden transition-all duration-300">
-            {/* Top Bar (Always visible) */}
-            <div
-              className="flex items-center justify-between px-4 py-3 cursor-pointer hover:bg-slate-800/50 transition-colors"
-              onClick={() => setIsRoutesExpanded(!isRoutesExpanded)}
-            >
-              <div className="flex flex-col">
-                <div className="flex items-center gap-2">
-                  <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Active Route</span>
-                  <span className="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded border border-slate-700">
-                    {routes.length} found
+        <>
+          {/* Desktop Sidebar (Hidden on Mobile) */}
+          <div className="hidden sm:flex absolute top-[104px] left-4 bottom-4 w-[420px] z-40 flex-col gap-4 pointer-events-none transition-all duration-500 animate-slideRight">
+            <div className="pointer-events-auto shrink-0 flex flex-col glass-panel overflow-hidden transition-all duration-300">
+              <div
+                className="flex items-center justify-between px-4 py-3 cursor-pointer hover:bg-slate-800/50 transition-colors"
+                onClick={() => setIsRoutesExpanded(!isRoutesExpanded)}
+              >
+                <div className="flex flex-col">
+                  <div className="flex items-center gap-2">
+                    <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Active Route</span>
+                    <span className="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded border border-slate-700">
+                      {routes.length} found
+                    </span>
+                  </div>
+                  <span className="text-sm font-medium text-emerald-400 truncate max-w-[240px]">
+                    {searchParams.source} → {searchParams.destination || 'Any'}
                   </span>
                 </div>
-                <span className="text-sm font-medium text-emerald-400 truncate max-w-[240px]">
-                  {searchParams.source} → {searchParams.destination || 'Any'}
-                </span>
+
+                <div className="flex items-center gap-3">
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setIsSearchActive(false);
+                    }}
+                    className="px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-300 text-[10px] font-bold uppercase tracking-wider rounded border border-slate-600 transition-colors"
+                  >
+                    New Search
+                  </button>
+                  <div className={`transform transition-transform duration-300 ${isRoutesExpanded ? 'rotate-180' : ''}`}>
+                    <svg className="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                  </div>
+                </div>
               </div>
 
-              <div className="flex items-center gap-3">
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setIsSearchActive(false);
-                  }}
-                  className="px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-300 text-[10px] font-bold uppercase tracking-wider rounded border border-slate-600 transition-colors"
-                >
-                  New Search
-                </button>
-                <div className={`transform transition-transform duration-300 ${isRoutesExpanded ? 'rotate-180' : ''}`}>
-                  <svg className="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+              <div className={`transition-all duration-500 ease-in-out ${isRoutesExpanded ? 'max-h-[600px] opacity-100 border-t border-slate-700/50' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+                <div className="p-4" onClick={(e) => e.stopPropagation()}>
+                  {routes.length > 0 ? (
+                    <RouteResults
+                      routes={routes}
+                      onSelectRoute={(route) => {
+                        setSelectedRoute(route);
+                        setSelectedBusId(null);
+                        setIsRoutesExpanded(false);
+                      }}
+                      selectedRoute={selectedRoute}
+                    />
+                  ) : (
+                    <div className="text-center py-4 text-slate-400 text-sm">No routes available</div>
+                  )}
                 </div>
               </div>
             </div>
 
-            {/* Expandable Route Results */}
-            <div className={`transition-all duration-500 ease-in-out ${isRoutesExpanded ? 'max-h-[600px] opacity-100 border-t border-slate-700/50' : 'max-h-0 opacity-0 overflow-hidden'}`}>
-              <div className="p-4" onClick={(e) => e.stopPropagation()}>
-                {routes.length > 0 ? (
-                  <RouteResults
-                    routes={routes}
-                    onSelectRoute={(route) => {
-                      setSelectedRoute(route);
-                      setSelectedBusId(null);
-                      setIsRoutesExpanded(false); // Auto-collapse on selection
-                    }}
-                    selectedRoute={selectedRoute}
+            {error && (
+              <div className="pointer-events-auto shrink-0 glass-panel border-red-500/50 bg-red-900/30 text-white p-4">
+                <p className="font-semibold text-red-400">Error</p>
+                <p className="text-sm">{error}</p>
+              </div>
+            )}
+
+            <div className="flex-1 overflow-y-auto w-full pr-2 pt-2 pointer-events-auto custom-scrollbar pb-20">
+              {searchParams.source && (
+                <LiveBusTracker
+                  fromStop={searchParams.source}
+                  toStop={searchParams.destination}
+                  routeNumber={selectedRoute?.route_number}
+                  selectedBusId={selectedBusId}
+                  setSelectedBusId={setSelectedBusId}
+                />
+              )}
+            </div>
+          </div>
+
+          {/* Mobile Bottom Sheet (Hidden on Desktop) */}
+          <div className={`sm:hidden bottom-sheet ${sheetState === 'expanded' ? 'expanded' : sheetState === 'half' ? 'half' : ''}`}>
+            <div
+              className="sheet-handle"
+              onClick={() => setSheetState(sheetState === 'minimized' ? 'half' : sheetState === 'half' ? 'expanded' : 'minimized')}
+            />
+
+            <div className="px-5 pb-5 h-full flex flex-col gap-4 overflow-hidden">
+              <div className="flex items-center justify-between">
+                <div className="flex flex-col text-left">
+                  <div className="flex items-center gap-2">
+                    <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Active Route</span>
+                    <span className="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded border border-slate-700">
+                      {routes.length}
+                    </span>
+                  </div>
+                  <span className="text-sm font-medium text-emerald-400 truncate max-w-[200px]">
+                    {searchParams.source} → {searchParams.destination || 'Any'}
+                  </span>
+                </div>
+
+                <button
+                  onClick={() => setIsSearchActive(false)}
+                  className="px-3 py-1.5 bg-slate-800 text-slate-300 text-[10px] font-bold uppercase rounded border border-slate-600"
+                >
+                  New Search
+                </button>
+              </div>
+
+              <div className="flex-1 overflow-y-auto custom-scrollbar pb-32">
+                {routes.length > 0 && sheetState !== 'minimized' && (
+                  <div className="mb-6">
+                    <RouteResults
+                      routes={routes}
+                      onSelectRoute={(route) => {
+                        setSelectedRoute(route);
+                        setSelectedBusId(null);
+                        setSheetState('minimized');
+                      }}
+                      selectedRoute={selectedRoute}
+                    />
+                  </div>
+                )}
+
+                {searchParams.source && (
+                  <LiveBusTracker
+                    fromStop={searchParams.source}
+                    toStop={searchParams.destination}
+                    routeNumber={selectedRoute?.route_number}
+                    selectedBusId={selectedBusId}
+                    setSelectedBusId={setSelectedBusId}
                   />
-                ) : (
-                  <div className="text-center py-4 text-slate-400 text-sm">No routes available</div>
                 )}
               </div>
             </div>
           </div>
-
-          {error && (
-            <div className="pointer-events-auto shrink-0 glass-panel border-red-500/50 bg-red-900/30 text-white p-4">
-              <p className="font-semibold text-red-400">Error</p>
-              <p className="text-sm">{error}</p>
-            </div>
-          )}
-
-          {/* Scrollable Line Trackers Area */}
-          <div className="flex-1 overflow-y-auto w-full pr-2 pt-2 pointer-events-auto custom-scrollbar pb-20">
-
-            {searchParams.source && (
-              <LiveBusTracker
-                fromStop={searchParams.source}
-                toStop={searchParams.destination}
-                routeNumber={selectedRoute?.route_number}
-                selectedBusId={selectedBusId}
-                setSelectedBusId={setSelectedBusId}
-              />
-            )}
-          </div>
-        </div>
+        </>
       )}
+
       {/* Weather Overlay Effects */}
       {weatherCondition === 'rain' && (
         <div className="absolute inset-0 pointer-events-none z-30 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-30 mix-blend-overlay animate-pulse"></div>
