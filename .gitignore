@@ -56,3 +56,4 @@ htmlcov/
 # Custom Virtual Envs
 mtc_env/
 
+.firebase/
