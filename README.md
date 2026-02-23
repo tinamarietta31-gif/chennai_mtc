@@ -30,6 +30,8 @@ chennai_mtc_project/
 │   ├── src/
 │   │   ├── App.js             # Main application
 │   │   ├── index.js           # Entry point
+│   │   ├── firebase.js        # [NEW] Firebase configuration
+│   │   ├── config.js          # [NEW] API configuration
 │   │   ├── index.css          # Tailwind CSS
 │   │   ├── components/
 │   │   │   ├── Header.js
@@ -89,7 +91,14 @@ cp .env.example .env
 npm start
 ```
 
-The app will be available at `http://localhost:3000`
+The app will be available at `http://localhost:3000`.
+
+### 🌐 Hybrid Deployment (Recommended)
+
+To host this system on the internet:
+1.  **Backend**: Deploy the `backend/` folder to **[Render.com](https://render.com)**. Set the Start Command to `uvicorn app:app --host 0.0.0.0 --port $PORT`.
+2.  **Frontend**: Deploy the `frontend/` folder to **[Firebase Hosting](https://firebase.google.com/docs/hosting)** or **Vercel**. 
+3.  **Environment Variable**: Set `REACT_APP_API_URL` on your frontend host to point to your live Render backend URL.
 
 > **Note:** This app uses OpenStreetMap + Leaflet for maps, which is completely free and requires no API key!
 

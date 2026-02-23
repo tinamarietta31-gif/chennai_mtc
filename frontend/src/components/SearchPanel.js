@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaLocationArrow, FaMapMarkerAlt, FaSearch } from 'react-icons/fa';
+import API_BASE_URL from '../config';
 
 const SearchPanel = ({ onSearch, loading }) => {
   const [source, setSource] = useState('');
@@ -24,7 +25,7 @@ const SearchPanel = ({ onSearch, loading }) => {
   useEffect(() => {
     const loadAllStops = async () => {
       try {
-        const response = await fetch('http://localhost:8000/get-all-stops-with-routes');
+        const response = await fetch(`${API_BASE_URL}/get-all-stops-with-routes`);
         const data = await response.json();
         setAllStops(data.stops || []);
       } catch (error) {
@@ -114,7 +115,7 @@ const SearchPanel = ({ onSearch, loading }) => {
   const loadDestinationStops = async (stopName, routes) => {
     try {
       const response = await fetch(
-        `http://localhost:8000/get-destination-stops?from_stop=${encodeURIComponent(stopName)}`
+        `${API_BASE_URL}/get-destination-stops?from_stop=${encodeURIComponent(stopName)}`
       );
       const data = await response.json();
       setDestinationStops(data.destination_stops || []);
@@ -311,8 +312,8 @@ const SearchPanel = ({ onSearch, loading }) => {
           type="submit"
           disabled={loading || !source || !destination}
           className={`w-full py-3.5 px-4 rounded-xl font-semibold text-sm tracking-wider uppercase transition-all duration-300 mt-2 ${loading || !source || !destination
-              ? 'bg-slate-800/80 text-slate-500 cursor-not-allowed border border-slate-700/50'
-              : 'bg-slate-700 hover:bg-slate-600 text-white border border-slate-600 shadow-md transform hover:-translate-y-0.5'
+            ? 'bg-slate-800/80 text-slate-500 cursor-not-allowed border border-slate-700/50'
+            : 'bg-slate-700 hover:bg-slate-600 text-white border border-slate-600 shadow-md transform hover:-translate-y-0.5'
             }`}
         >
           {loading ? (

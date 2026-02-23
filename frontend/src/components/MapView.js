@@ -3,6 +3,7 @@ import { MapContainer, TileLayer, Polyline, Marker, Popup, useMap } from 'react-
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { FaBus } from 'react-icons/fa';
+import API_BASE_URL from '../config';
 
 // Fix for default marker icons in React-Leaflet
 delete L.Icon.Default.prototype._getIconUrl;
@@ -153,8 +154,8 @@ const MapView = ({ mapData, selectedRoute, allRoutes, selectedBusId, setSelected
   useEffect(() => {
     const fetchBuses = async () => {
       try {
-        await fetch('http://localhost:8000/simulate-bus-movement', { method: 'POST' });
-        const res = await fetch('http://localhost:8000/live-bus-positions');
+        await fetch(`${API_BASE_URL}/simulate-bus-movement`, { method: 'POST' });
+        const res = await fetch(`${API_BASE_URL}/live-bus-positions`);
         const data = await res.json();
         if (data.buses) {
           const validBuses = data.buses.filter(b => b.latitude && b.longitude);

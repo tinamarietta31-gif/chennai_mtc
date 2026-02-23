@@ -116,8 +116,9 @@ class BusETAPredictor:
     
     def _train_eta_model(self):
         """Train ETA prediction model on simulated ticket timestamp data"""
-        # Generate training data simulating 10 days of ticket machine data
-        training_data = self._generate_ticket_training_data(days=10)
+        # Generate training data simulating 2 days of ticket machine data (reduced for speed)
+        print("   [ETA 1/4] Generating ticket training data...")
+        training_data = self._generate_ticket_training_data(days=2)
         
         features = [
             'distance_to_stop',      # km from current position to target stop
@@ -136,12 +137,14 @@ class BusETAPredictor:
         y = training_data['actual_eta']  # in minutes
         
         # Scale features
+        print("   [ETA 2/4] Scaling features...")
         X_scaled = self.scaler.fit_transform(X)
         
-        # Train Gradient Boosting model
+        # Train Gradient Boosting model (reduced for speed)
+        print("   [ETA 3/4] Training GradientBoosting model...")
         self.eta_model = GradientBoostingRegressor(
-            n_estimators=150,
-            max_depth=8,
+            n_estimators=50,
+            max_depth=5,
             min_samples_split=5,
             learning_rate=0.1,
             random_state=42
@@ -149,6 +152,7 @@ class BusETAPredictor:
         self.eta_model.fit(X_scaled, y)
         
         # Save model
+        print("   [ETA 4/4] Saving model...")
         self._save_model()
         
         print(f"   - Trained on {len(training_data)} ticket records")
@@ -178,8 +182,8 @@ class BusETAPredictor:
                 if len(stops) < 3:
                     continue
                 
-                # Simulate multiple bus trips per day
-                trips_per_day = random.randint(15, 25)
+                # Simulate multiple bus trips per day (reduced for speed)
+                trips_per_day = random.randint(3, 5)
                 
                 for trip in range(trips_per_day):
                     # Random start hour (5 AM to 11 PM)
@@ -219,8 +223,8 @@ class BusETAPredictor:
                         
                         distance = edges['distance_km'].sum() if len(edges) > 0 else random.uniform(0.5, 2.0)
                         
-                        # Calculate time to reach each future stop
-                        for j in range(i + 1, min(i + 10, len(stops))):
+                        # Calculate time to reach each future stop (reduced for speed)
+                        for j in range(i + 1, min(i + 3, len(stops))):
                             target_stop = stops[j]
                             stops_between = j - i
                             
@@ -339,18 +343,9 @@ class BusETAPredictor:
                    user_stop_name: str, data_loader) -> Dict:
         """
         Predict ETA for buses arriving at user's stop
-        
-        Args:
-            route_number: Bus route number
-            target_stop_name: Where user wants to go (for filtering buses going that direction)
-            user_stop_name: User's current stop (where they're waiting)
-            data_loader: DataLoader instance for stop info
-        
-        Returns:
-            List of incoming buses with ETA predictions
         """
         if not self._ready:
-            return {'error': 'ETA Predictor not ready'}
+            return {'error': 'ETA Predictor not ready', 'incoming_buses': []}
         
         incoming_buses = []
         current_time = datetime.now()
@@ -363,29 +358,52 @@ class BusETAPredictor:
         weather_factor = self._get_weather_factor()
         traffic_factor = self._get_traffic_factor(hour, is_weekend)
         
-        # Get user's stop sequence in this route
-        user_stop_seq = data_loader.get_stop_sequence_in_route(route_number, user_stop_name)
-        target_stop_seq = data_loader.get_stop_sequence_in_route(route_number, target_stop_name)
+        # Get all stops for this route to find user's position
+        route_stops = data_loader.get_route_stops(str(route_number))
+        if not route_stops:
+            return {'error': f'Route {route_number} not found', 'incoming_buses': []}
         
-        if user_stop_seq is None:
-            return {'error': f'Stop {user_stop_name} not found on route {route_number}'}
+        # Find user's stop index in route stops using best fuzzy matching
+        user_stop_idx = None
+        user_stop_lower = user_stop_name.lower().strip()
+        best_match_len = -1
+        
+        for idx, stop in enumerate(route_stops):
+            sn = stop['stop_name'].lower()
+            # Exact match is best
+            if sn == user_stop_lower:
+                user_stop_idx = idx
+                break
+            # Otherwise find the longest matching stop name (most specific)
+            if user_stop_lower in sn or sn in user_stop_lower:
+                match_len = len(sn)
+                if match_len > best_match_len:
+                    best_match_len = match_len
+                    user_stop_idx = idx
+        
+        if user_stop_idx is None:
+            return {'error': f'Stop {user_stop_name} not found on route {route_number}', 'incoming_buses': []}
+        
+        print(f"   🔍 ETA: user_stop='{user_stop_name}' matched idx={user_stop_idx} on route {route_number}")
         
         # Find buses on this route that haven't passed user's stop
+        route_str = str(route_number)
         for bus_id, bus_info in self.live_bus_positions.items():
-            if bus_info['route'] != str(route_number):
+            bus_route = str(bus_info['route'])
+            if bus_route != route_str:
                 continue
             
-            bus_stop_seq = bus_info['current_stop_idx']
+            bus_stop_idx = bus_info['current_stop_idx']
+            print(f"   🚌 Bus {bus_id}: stop_idx={bus_stop_idx}, user_idx={user_stop_idx}")
             
             # Check if bus is before user's stop (coming towards them)
-            if bus_stop_seq < user_stop_seq:
-                stops_away = user_stop_seq - bus_stop_seq
+            if bus_stop_idx < user_stop_idx:
+                stops_away = user_stop_idx - bus_stop_idx
                 
                 # Estimate distance
                 distance = stops_away * 1.2  # Rough estimate: 1.2 km per stop
                 
                 # Get historical average for this segment
-                pattern = self.route_timing_patterns.get(str(route_number), {})
                 historical_avg = stops_away * 3  # 3 min per stop average
                 
                 # Prepare features for prediction
@@ -403,8 +421,12 @@ class BusETAPredictor:
                 ]])
                 
                 # Predict ETA
-                features_scaled = self.scaler.transform(features)
-                predicted_eta = self.eta_model.predict(features_scaled)[0]
+                try:
+                    features_scaled = self.scaler.transform(features)
+                    predicted_eta = self.eta_model.predict(features_scaled)[0]
+                except:
+                    # Fallback calculation
+                    predicted_eta = historical_avg * traffic_factor * weather_factor
                 
                 # Apply current delay
                 predicted_eta += bus_info['delay_minutes']
@@ -415,9 +437,10 @@ class BusETAPredictor:
                 
                 incoming_buses.append({
                     'bus_id': bus_id,
-                    'route_number': route_number,
-                    'current_location': bus_info['current_stop'].get('stop_name', f"Stop {bus_stop_seq}"),
+                    'route_number': route_str,
+                    'current_location': bus_info['current_stop'].get('stop_name', f"Stop {bus_stop_idx}"),
                     'stops_away': stops_away,
+                    'distance_km': round(distance, 1),
                     'eta_minutes': round(predicted_eta, 1),
                     'arrival_time': arrival_time.strftime('%H:%M'),
                     'delay_status': self._get_delay_status(bus_info['delay_minutes']),
@@ -552,27 +575,12 @@ class BusETAPredictor:
                     bus_info['passengers'] += random.randint(-5, 10)
                     bus_info['passengers'] = max(0, bus_info['passengers'])
                 else:
-                    # Get OSRM polyline for smooth map movement strictly on roads
+                    # Simple linear interpolation between stops (fast, no external API)
                     lat1, lon1 = float(curr_stop.get('latitude', 0)), float(curr_stop.get('longitude', 0))
                     lat2, lon2 = float(next_stop.get('latitude', 0)), float(next_stop.get('longitude', 0))
                     p = bus_info['progress_to_next']
-                    
-                    path = self._get_osrm_path(lat1, lon1, lat2, lon2)
-                    if len(path) > 1:
-                        # Find precise sub-segment along detailed polyline
-                        idx_float = p * (len(path) - 1)
-                        idx_lower = int(idx_float)
-                        idx_upper = min(idx_lower + 1, len(path) - 1)
-                        remainder = idx_float - idx_lower
-                        
-                        plat1, plng1 = path[idx_lower]
-                        plat2, plng2 = path[idx_upper]
-                        
-                        bus_info['current_lat'] = plat1 + (plat2 - plat1) * remainder
-                        bus_info['current_lng'] = plng1 + (plng2 - plng1) * remainder
-                    else:
-                        bus_info['current_lat'] = lat1 + (lat2 - lat1) * p
-                        bus_info['current_lng'] = lon1 + (lon2 - lon1) * p
+                    bus_info['current_lat'] = lat1 + (lat2 - lat1) * p
+                    bus_info['current_lng'] = lon1 + (lon2 - lon1) * p
                         
     def _get_osrm_path(self, lat1: float, lon1: float, lat2: float, lon2: float) -> List[List[float]]:
         """Fetch and cache precise road geometry between two points using OSRM"""

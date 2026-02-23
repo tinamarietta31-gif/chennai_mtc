@@ -10,6 +10,7 @@ from datetime import datetime
 from typing import Optional, List
 import uvicorn
 import pandas as pd
+import os
 
 from core.data_loader import DataLoader
 from core.route_engine import RouteEngine
@@ -23,9 +24,10 @@ app = FastAPI(
 )
 
 # CORS middleware for frontend
+ORIGINS = os.getenv("ALLOWED_ORIGINS", "*").split(",")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

@@ -114,7 +114,7 @@ class MLEngine:
             
             # Generate samples for different source-destination pairs within this route
             for i in range(num_stops_in_route):
-                for j in range(i + 1, min(i + 15, num_stops_in_route)):  # Limit to reasonable segments
+                for j in range(i + 1, min(i + 5, num_stops_in_route)):  # Reduced for faster training
                     source_stop = stops_list[i]
                     dest_stop = stops_list[j]
                     
@@ -132,8 +132,8 @@ class MLEngine:
                             stops_list[i:j+1]
                         )
                     
-                    # Generate samples for different times of day
-                    for hour in [7, 8, 9, 10, 12, 14, 16, 17, 18, 19, 20, 22]:
+                    # Generate samples for different times of day (reduced for speed)
+                    for hour in [8, 12, 17, 22]:
                         peak_hour_flag = 1 if (8 <= hour <= 10) or (17 <= hour <= 20) else 0
                         
                         # Calculate average stop density
@@ -252,6 +252,7 @@ class MLEngine:
     def _train_models(self):
         """Train ML models on actual CSV data"""
         # Generate training data from CSV files
+        print("   [1/5] Generating training data...")
         df, y_time, y_delay = self._generate_training_data_from_csv()
         
         # Feature columns for training
@@ -261,6 +262,7 @@ class MLEngine:
         X_features = df[feature_cols]
         
         # Scale features
+        print("   [2/5] Scaling features...")
         X_scaled = self.scaler.fit_transform(X_features)
         
         # Split data
@@ -272,9 +274,10 @@ class MLEngine:
         )
         
         # Train travel time model (RandomForestRegressor)
+        print("   [3/5] Training travel time model...")
         self.travel_time_model = RandomForestRegressor(
-            n_estimators=100,
-            max_depth=15,
+            n_estimators=50,
+            max_depth=10,
             min_samples_split=5,
             random_state=42,
             n_jobs=-1
@@ -282,8 +285,9 @@ class MLEngine:
         self.travel_time_model.fit(X_train, y_train_time)
         
         # Train delay prediction model
+        print("   [4/5] Training delay prediction model...")
         self.delay_model = GradientBoostingClassifier(
-            n_estimators=50,
+            n_estimators=30,
             max_depth=5,
             random_state=42
         )

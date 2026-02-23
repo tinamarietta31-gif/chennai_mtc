@@ -4,6 +4,7 @@ import SearchPanel from './components/SearchPanel';
 import RouteResults from './components/RouteResults';
 import MapView from './components/MapView';
 import LiveBusTracker from './components/LiveBusTracker';
+import API_BASE_URL from './config';
 
 function App() {
   const [routes, setRoutes] = useState([]);
@@ -50,7 +51,7 @@ function App() {
     setIsRoutesExpanded(false); // keep routes panel closed on new search
 
     try {
-      const response = await fetch('http://localhost:8000/search-route', {
+      const response = await fetch(`${API_BASE_URL}/search-route`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
