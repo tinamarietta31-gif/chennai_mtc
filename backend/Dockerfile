@@ -1,13 +1,14 @@
 # Use official Python lightweight image
 FROM python:3.9-slim
 
-# Set working directory
+# Set working directory to the project root
 WORKDIR /app
 
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 ENV PORT 8080
+ENV PYTHONPATH /app:/app/backend
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -19,17 +20,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY backend/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy backend code
-COPY backend/ /app/backend/
+# Copy everything from the local folder to the container's /app
+COPY . .
 
-# Copy data files from root to /app (so data_loader can find them relative to its location)
-COPY route_stop_ordered.csv /app/
-COPY route_edges.csv /app/
-COPY chennai_bus_stops.csv /app/
-COPY cleaned_all_stops.csv /app/
-
-# Work from the backend directory
+# Move to the backend folder where app.py is located
 WORKDIR /app/backend
 
-# Run the application
-CMD uvicorn app:app --host 0.0.0.0 --port $PORT
+# Run the application using uvicorn
+# We use the list format for CMD to ensure it handles signals correctly
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8080"]

@@ -11,6 +11,12 @@ from typing import Optional, List
 import uvicorn
 import pandas as pd
 import os
+import sys
+
+# Add current and parent directory to sys.path to ensure local modules are found
+current_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(current_dir)
+sys.path.append(os.path.dirname(current_dir))
 
 from core.data_loader import DataLoader
 from core.route_engine import RouteEngine
