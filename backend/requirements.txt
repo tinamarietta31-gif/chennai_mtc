@@ -11,3 +11,5 @@ scikit-learn
 
 # Utilities
 python-dotenv
+requests
+xgboost

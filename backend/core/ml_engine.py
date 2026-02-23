@@ -14,7 +14,12 @@ from typing import Dict, Tuple
 
 class MLEngine:
     def __init__(self):
-        self.base_path = "/Users/jerimothimmanuel/chennai_mtc_project"
+        # Dynamically determine the base path (project root)
+        current_file = os.path.abspath(__file__)
+        core_dir = os.path.dirname(current_file)
+        backend_dir = os.path.dirname(core_dir)
+        self.base_path = os.getenv("DATA_BASE_PATH", os.path.dirname(backend_dir))
+        
         self.model_path = os.path.join(self.base_path, "backend/models")
         self.travel_time_model = None
         self.delay_model = None
