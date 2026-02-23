@@ -15,7 +15,7 @@ const Header = () => {
                 Chennai MTC
               </h1>
               <p className="text-slate-400 text-[8px] sm:text-[10px] font-bold tracking-[0.2em] uppercase mt-0.5 sm:mt-1">
-                Smart Transport
+                Smart Transport <span className="text-[6px] opacity-30 ml-2">v2.1.0</span>
               </p>
             </div>
           </div>
